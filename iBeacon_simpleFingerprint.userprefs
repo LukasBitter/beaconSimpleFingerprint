@@ -1,0 +1,29 @@
+﻿<Properties StartupItem="iBeacon_simpleFingerprint/iBeacon_simpleFingerprint.csproj">
+  <MonoDevelop.Ide.Workbench>
+    <Files>
+      <File FileName="iBeacon_simpleFingerprint/ViewController.cs" Line="40" Column="4" />
+      <File FileName="iBeacon_simpleFingerprint/ResultLocationCell.cs" Line="10" Column="10" />
+      <File FileName="iBeacon_simpleFingerprint/Location.cs" Line="105" Column="111" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="iBeacon_multiple" expanded="True">
+            <Node name="iBeacon_multiple" expanded="True" />
+          </Node>
+          <Node name="iBeacon_simpleFingerprint" expanded="True">
+            <Node name="iBeacon_simpleFingerprint" expanded="True">
+              <Node name="Main.storyboard" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.iBeacon__simpleFingerprint PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.7f184b35e4f16900a41d4fd7b3caf0f60aa08c75" />
+</Properties>

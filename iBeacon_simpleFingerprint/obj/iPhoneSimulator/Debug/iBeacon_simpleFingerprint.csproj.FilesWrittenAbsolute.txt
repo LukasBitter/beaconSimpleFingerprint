@@ -1,0 +1,16 @@
+/Users/bitterlukas/Projects/iBeacon_simpleFingerprint/iBeacon_simpleFingerprint/obj/iPhoneSimulator/Debug/Xamarin.iOS,Version=v1.0.AssemblyAttribute.cs
+/Users/bitterlukas/Projects/iBeacon_simpleFingerprint/iBeacon_simpleFingerprint/obj/iPhoneSimulator/Debug/ibtool/LaunchScreen.nib
+/Users/bitterlukas/Projects/iBeacon_simpleFingerprint/iBeacon_simpleFingerprint/obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc/8-view-13.nib
+/Users/bitterlukas/Projects/iBeacon_simpleFingerprint/iBeacon_simpleFingerprint/obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc/Info.plist
+/Users/bitterlukas/Projects/iBeacon_simpleFingerprint/iBeacon_simpleFingerprint/obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc/UINavigationController-6.nib
+/Users/bitterlukas/Projects/iBeacon_simpleFingerprint/iBeacon_simpleFingerprint/obj/iPhoneSimulator/Debug/ibtool/_BundleResourceWithLogicalName.items
+/Users/bitterlukas/Projects/iBeacon_simpleFingerprint/iBeacon_simpleFingerprint/obj/iPhoneSimulator/Debug/actool/partial-info.plist
+/Users/bitterlukas/Projects/iBeacon_simpleFingerprint/iBeacon_simpleFingerprint/obj/iPhoneSimulator/Debug/actool/asset-manifest.plist
+/Users/bitterlukas/Projects/iBeacon_simpleFingerprint/iBeacon_simpleFingerprint/obj/iPhoneSimulator/Debug/actool/_PartialAppManifest.items
+/Users/bitterlukas/Projects/iBeacon_simpleFingerprint/iBeacon_simpleFingerprint/obj/iPhoneSimulator/Debug/actool/_BundleResourceWithLogicalName.items
+/Users/bitterlukas/Projects/iBeacon_simpleFingerprint/iBeacon_simpleFingerprint/obj/iPhoneSimulator/Debug/optimized/
+/Users/bitterlukas/Projects/iBeacon_simpleFingerprint/iBeacon_simpleFingerprint/bin/iPhoneSimulator/Debug/iBeacon_simpleFingerprint.exe.mdb
+/Users/bitterlukas/Projects/iBeacon_simpleFingerprint/iBeacon_simpleFingerprint/bin/iPhoneSimulator/Debug/iBeacon_simpleFingerprint.exe
+/Users/bitterlukas/Projects/iBeacon_simpleFingerprint/iBeacon_simpleFingerprint/obj/iPhoneSimulator/Debug/iBeacon_simpleFingerprint.exe
+/Users/bitterlukas/Projects/iBeacon_simpleFingerprint/iBeacon_simpleFingerprint/obj/iPhoneSimulator/Debug/iBeacon_simpleFingerprint.exe.mdb
+/Users/bitterlukas/Projects/iBeacon_simpleFingerprint/iBeacon_simpleFingerprint/obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib

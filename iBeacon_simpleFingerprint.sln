@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iBeacon_simpleFingerprint", "iBeacon_simpleFingerprint\iBeacon_simpleFingerprint.csproj", "{39700CB6-D72D-4513-9E8D-1B0020D61D41}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhone = Release|iPhone
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{39700CB6-D72D-4513-9E8D-1B0020D61D41}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{39700CB6-D72D-4513-9E8D-1B0020D61D41}.Debug|iPhone.Build.0 = Debug|iPhone
+		{39700CB6-D72D-4513-9E8D-1B0020D61D41}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{39700CB6-D72D-4513-9E8D-1B0020D61D41}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{39700CB6-D72D-4513-9E8D-1B0020D61D41}.Release|iPhone.ActiveCfg = Release|iPhone
+		{39700CB6-D72D-4513-9E8D-1B0020D61D41}.Release|iPhone.Build.0 = Release|iPhone
+		{39700CB6-D72D-4513-9E8D-1B0020D61D41}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{39700CB6-D72D-4513-9E8D-1B0020D61D41}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+EndGlobal
