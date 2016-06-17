@@ -2,7 +2,7 @@ using Foundation;
 using System;
 using UIKit;
 
-namespace iBeacon_simpleFingerprint
+namespace IBeacon.SimpleFingerprint
 {
     public partial class SecondViewController : UIViewController
     {

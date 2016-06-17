@@ -1,29 +1,29 @@
-﻿<Properties StartupItem="iBeacon_simpleFingerprint/iBeacon_simpleFingerprint.csproj">
-  <MonoDevelop.Ide.Workbench>
+﻿<Properties StartupItem="iBeacon_simpleFingerprint/iBeacon_simpleFingerprint.csproj" GitUserInfo="UsingGIT">
+  <MonoDevelop.Ide.Workbench ActiveDocument="iBeacon_simpleFingerprint/ViewController.cs">
     <Files>
-      <File FileName="iBeacon_simpleFingerprint/ViewController.cs" Line="40" Column="4" />
-      <File FileName="iBeacon_simpleFingerprint/ResultLocationCell.cs" Line="10" Column="10" />
-      <File FileName="iBeacon_simpleFingerprint/Location.cs" Line="105" Column="111" />
+      <File FileName="iBeacon_simpleFingerprint/ViewController.cs" Line="23" Column="4" />
+      <File FileName="iBeacon_simpleFingerprint/Location.cs" Line="63" Column="52" />
+      <File FileName="iBeacon_simpleFingerprint/ResultLocationCell.cs" Line="14" Column="17" />
+      <File FileName="iBeacon_simpleFingerprint/Main.cs" Line="16" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="iBeacon_multiple" expanded="True">
-            <Node name="iBeacon_multiple" expanded="True" />
-          </Node>
           <Node name="iBeacon_simpleFingerprint" expanded="True">
             <Node name="iBeacon_simpleFingerprint" expanded="True">
-              <Node name="Main.storyboard" selected="True" />
+              <Node name="ComponentReferenceFolder" expanded="True" />
+              <Node name="ViewController.cs" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.iBeacon__simpleFingerprint PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.7f184b35e4f16900a41d4fd7b3caf0f60aa08c75" />
 </Properties>

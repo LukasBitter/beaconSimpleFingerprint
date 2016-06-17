@@ -6,15 +6,16 @@ using CoreLocation;
 using Foundation;
 using UIKit;
 
-namespace iBeacon_simpleFingerprint
+namespace IBeacon.SimpleFingerprint
 {
 	public partial class ViewController : UIViewController, IUICollectionViewDataSource
 	{
-		CLLocationManager _locationManager;
-		CLBeaconRegion _region;
-		List<Location> _listLocations;
-		SortedList<int, CLBeacon> _listRangedBeacons;
+		CLLocationManager locationManager;
+		CLBeaconRegion region;
+		List<Location> listLocations;
+		SortedList<int, CLBeacon> listRangedBeacons;
 		Location currentLocation;
+		int indexLocationList;
 
 		public ViewController (IntPtr handle) : base (handle)
 		{
@@ -25,25 +26,25 @@ namespace iBeacon_simpleFingerprint
 			base.ViewDidLoad ();
 			// Perform any additional setup after loading the view, typically from a nib.
 
-			_locationManager = new CLLocationManager ();
-			_listLocations = new List<Location> ();
+			locationManager = new CLLocationManager ();
+			listLocations = new List<Location> ();
 
 			LocationCollection.WeakDataSource = this;
 			CurrentLocationText.Text = "No location ranged yet";
 
-			_locationManager.AuthorizationChanged += LocationManagerAuthorizationChanged;
+			locationManager.AuthorizationChanged += LocationManagerAuthorizationChanged;
 
-			_locationManager.DidRangeBeacons += LocationManagerDidRangeBeacons;
+			locationManager.DidRangeBeacons += LocationManagerDidRangeBeacons;
 
-			_locationManager.RequestAlwaysAuthorization();
+			locationManager.RequestAlwaysAuthorization();
 
 		}
 
 		partial void ButtonAddLocation_TouchUpInside(UIButton sender)
 		{
-			if (!currentLocation.inList(_listLocations))
+			if (indexLocationList == -1)
 			{
-				_listLocations.Add(currentLocation);
+				listLocations.Add(currentLocation);
 			}
 			LocationCollection.ReloadData();
 		}
@@ -56,18 +57,44 @@ namespace iBeacon_simpleFingerprint
 		/// <param name="e">E.</param>
 		void LocationManagerDidRangeBeacons (object sender, CLRegionBeaconsRangedEventArgs e)
 		{
-			_listRangedBeacons = new SortedList<int, CLBeacon>();
-			currentLocation = new Location("Location #" + _listLocations.Count);
+			listRangedBeacons = new SortedList<int, CLBeacon>();
 
 			foreach (var beacon in e.Beacons.Where(b => b.Rssi < 0))
 			{
-				if (!_listRangedBeacons.ContainsValue(beacon))
+				if (!listRangedBeacons.ContainsValue(beacon))
 				{
-					_listRangedBeacons.Add(_listRangedBeacons.Count, beacon);
+					listRangedBeacons.Add(listRangedBeacons.Count, beacon);
 				}
 			}
-			currentLocation.addBeacons(_listRangedBeacons);
-			CurrentLocationText.Text = currentLocation.getBeaconsText();
+
+			if(listRangedBeacons.Count > 2)
+				NewLocation();
+		}
+
+		void NewLocation()
+		{
+			currentLocation = new Location();
+			currentLocation.Name = (listLocations.Count + 1).ToString();
+			currentLocation.AddBeacons(listRangedBeacons);
+
+			CurrentLocationText.Text = currentLocation.GetBeaconsText();
+
+			indexLocationList = currentLocation.InList(listLocations);
+			//Debug.WriteLine("inLocationList: {0}", inLocationList);
+			if (indexLocationList != -1)
+			{
+				LabelPositionFound.Text = "Position: " + listLocations[indexLocationList].Name;
+				var indexPath = NSIndexPath.FromIndex((nuint)indexLocationList);
+				//Debug.WriteLine("desc: " + LocationCollection.GetDebugDescription());
+				//Debug.WriteLine("desc: " + indexPath.GetIndexes().First());
+				var ind = new NSIndexPath();
+				//Debug.WriteLine("desc: " + LocationCollection.CellForItem(indexPath).Description);
+				//Loca tionCollection.CellForItem(indexPath).BackgroundColor = UIColor.Green;
+				//Debug.WriteLine("position found: " + LocationCollection.CellForItem(indexPath).BackgroundColor.GetDebugDescription);
+			}
+			else
+				LabelPositionFound.Text = "Position: None found";
+
 		}
 
 		/// <summary>
@@ -82,8 +109,8 @@ namespace iBeacon_simpleFingerprint
 
 			if(e.Status == CLAuthorizationStatus.AuthorizedAlways)
 			{
-				_region = new CLBeaconRegion(new NSUuid("F7826DA6-4fA2-4E98-8024-BC5B71E0893E"), "My region"); // Kontakt iBeacon
-				_locationManager.StartRangingBeacons(_region);
+				region = new CLBeaconRegion(new NSUuid("F7826DA6-4fA2-4E98-8024-BC5B71E0893E"), "My region"); // Kontakt iBeacon
+				locationManager.StartRangingBeacons(region);
 			}
 		}
 
@@ -95,16 +122,16 @@ namespace iBeacon_simpleFingerprint
 
 		public nint GetItemsCount(UICollectionView collectionView, nint section)
 		{
-			return _listLocations.Count(); 
+			return listLocations.Count(); 
 		}
 
 		public UICollectionViewCell GetCell(UICollectionView collectionView, NSIndexPath indexPath)
 		{
 			var cell = (ResultLocationCell)collectionView.DequeueReusableCell("location", indexPath);
 
-			var result = _listLocations[indexPath.Row];
-			cell.TheText.Text = result.name + "\n";
-			cell.TheText.Text += result.getBeaconsText();
+			var result = listLocations[indexPath.Row];
+			cell.TheText.Text = result.Name + "\n";
+			cell.TheText.Text += result.GetBeaconsText();
 
 			return cell;
 		}

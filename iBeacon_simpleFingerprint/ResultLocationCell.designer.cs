@@ -9,20 +9,20 @@ using System;
 using System.CodeDom.Compiler;
 using UIKit;
 
-namespace iBeacon_simpleFingerprint
+namespace IBeacon.SimpleFingerprint
 {
     [Register ("ResultLocationCell")]
     partial class ResultLocationCell
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UITextView LocationDisplay { get; set; }
+        UIKit.UITextView LocationText { get; set; }
 
         void ReleaseDesignerOutlets ()
         {
-            if (LocationDisplay != null) {
-                LocationDisplay.Dispose ();
-                LocationDisplay = null;
+            if (LocationText != null) {
+                LocationText.Dispose ();
+                LocationText = null;
             }
         }
     }

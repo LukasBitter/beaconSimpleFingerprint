@@ -17,101 +17,103 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="135" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="142" y="238" width="882" height="530"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="137">
-                                    <size key="itemSize" width="250" height="150"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="144" reuseIdentifier="location" customClass="ResultLocationCell">
-                                        <rect key="frame" x="10" y="-54" width="250" height="150"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="10" y="-54" width="250" height="150"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                            <subviews>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="180" translatesAutoresizingMaskIntoConstraints="NO">
-                                                    <rect key="frame" x="0.0" y="0.0" width="250" height="150"/>
-                                                    <color key="backgroundColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
-                                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                    <constraints>
-                                                        <constraint id="204" firstAttribute="height" constant="150"/>
-                                                    </constraints>
-                                                </textView>
-                                            </subviews>
-                                        </view>
-                                        <size key="customSize" width="250" height="150"/>
-                                        <connections>
-                                            <segue id="178" destination="8" kind="show"/>
-                                            <outlet property="LocationDisplay" destination="180" id="name-outlet-180"/>
-                                        </connections>
-                                        <constraints>
-                                            <constraint id="200" firstItem="144" firstAttribute="bottom" secondItem="180" secondAttribute="bottom"/>
-                                            <constraint id="201" firstItem="180" firstAttribute="centerX" secondItem="52" secondAttribute="centerX"/>
-                                            <constraint id="202" firstItem="135" firstAttribute="leading" secondItem="180" secondAttribute="trailing" constant="8"/>
-                                            <constraint id="203" firstItem="180" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20"/>
-                                        </constraints>
-                                    </collectionViewCell>
-                                </cells>
-                                <color key="backgroundColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
-                                <constraints>
-                                    <constraint id="208" firstAttribute="width" constant="882"/>
-                                    <constraint id="209" firstAttribute="height" constant="530"/>
-                                </constraints>
-                            </collectionView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="210" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="152" y="80" width="250" height="150"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" id="210" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="150" y="80" width="250" height="150"/>
                                 <color key="backgroundColor" colorSpace="calibratedRGB" red="0.81960784313725488" green="0.81176470588235294" blue="0.82745098039215681" alpha="1"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Current location" lineBreakMode="tailTruncation" minimumFontSize="10" id="211" translatesAutoresizingMaskIntoConstraints="NO" shadowOffsetHeight="-1" numberOfLines="2">
-                                <rect key="frame" x="38" y="132" width="79" height="46"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
+                                <inset key="scrollIndicatorInsets" minX="10" minY="10" maxX="10" maxY="10"/>
                                 <constraints>
-                                    <constraint id="230" firstAttribute="width" constant="79"/>
-                                    <constraint id="231" firstAttribute="height" constant="46"/>
+                                    <constraint id="358" firstAttribute="width" constant="250"/>
+                                    <constraint id="359" firstAttribute="height" constant="150"/>
                                 </constraints>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="232" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="20" y="284" width="124" height="30"/>
-                                <state key="normal" title="Get Position">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="233" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="20" y="246" width="114" height="30"/>
-                                <state key="normal" title="Add Location">
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="233" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="144" width="114" height="42"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0" green="1" blue="0" alpha="1"/>
+                                <state key="normal" title="Add">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="ButtonAddLocation_TouchUpInside:" destination="BYZ-38-t0r" id="241" eventType="touchUpInside"/>
                                 </connections>
+                                <constraints>
+                                    <constraint id="362" firstAttribute="width" constant="114"/>
+                                    <constraint id="363" firstAttribute="height" constant="42"/>
+                                </constraints>
                             </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="247" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="152" y="264" width="872" height="504"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="249">
+                                    <size key="itemSize" width="150" height="100"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="248" reuseIdentifier="location" customClass="ResultLocationCell">
+                                        <rect key="frame" x="10" y="10" width="250" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="10" y="10" width="250" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" id="291" translatesAutoresizingMaskIntoConstraints="NO">
+                                                    <rect key="frame" x="0.0" y="0.0" width="250" height="100"/>
+                                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    <constraints>
+                                                        <constraint id="374" firstAttribute="width" constant="250"/>
+                                                        <constraint id="375" firstAttribute="height" constant="100"/>
+                                                    </constraints>
+                                                    <color key="tintColor" colorSpace="calibratedWhite" white="0" alpha="0"/>
+                                                </textView>
+                                            </subviews>
+                                        </view>
+                                        <size key="customSize" width="250" height="100"/>
+                                        <connections>
+                                            <segue id="289" destination="8" kind="show"/>
+                                            <outlet property="LocationText" destination="291" id="name-outlet-291"/>
+                                        </connections>
+                                        <constraints>
+                                            <constraint id="372" firstItem="291" firstAttribute="leading" secondItem="248" secondAttribute="leading"/>
+                                            <constraint id="373" firstItem="248" firstAttribute="bottom" secondItem="291" secondAttribute="bottom"/>
+                                        </constraints>
+                                        <color key="backgroundColor" colorSpace="calibratedRGB" red="0" green="0.6" blue="0.4" alpha="1"/>
+                                    </collectionViewCell>
+                                </cells>
+                                <constraints>
+                                    <constraint id="366" firstAttribute="width" constant="872"/>
+                                    <constraint id="367" firstAttribute="height" constant="504"/>
+                                </constraints>
+                            </collectionView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Position: " lineBreakMode="tailTruncation" minimumFontSize="10" id="382" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="472" y="154" width="301" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <constraints>
-                            <constraint id="205" firstItem="8bC-Xf-vdC" firstAttribute="bottom" secondItem="135" secondAttribute="bottom"/>
-                            <constraint id="207" firstItem="135" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20"/>
-                            <constraint id="228" firstItem="211" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="38"/>
-                            <constraint id="229" firstItem="211" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="132"/>
+                            <constraint id="356" firstItem="210" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="150"/>
+                            <constraint id="357" firstItem="210" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="80"/>
+                            <constraint id="360" firstItem="233" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20"/>
+                            <constraint id="361" firstItem="233" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="144"/>
+                            <constraint id="364" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="247" secondAttribute="trailing"/>
+                            <constraint id="365" firstItem="8bC-Xf-vdC" firstAttribute="bottom" secondItem="247" secondAttribute="bottom"/>
                         </constraints>
                     </view>
                     <navigationItem title="Title" id="43" key="navigationItem"/>
                     <connections>
-                        <outlet property="LocationCollection" destination="135" id="name-outlet-135"/>
                         <outlet property="CurrentLocationText" destination="210" id="name-outlet-210"/>
                         <outlet property="ButtonAddLocation" destination="233" id="name-outlet-233"/>
-                        <outlet property="ButtonGetPosition" destination="232" id="name-outlet-232"/>
+                        <outlet property="LocationCollection" destination="247" id="name-outlet-247"/>
+                        <outlet property="LabelPositionFound" destination="382" id="name-outlet-382"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

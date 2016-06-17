@@ -1,7 +1,7 @@
 using System;
 using UIKit;
 
-namespace iBeacon_simpleFingerprint
+namespace IBeacon.SimpleFingerprint
 {
 	public partial class ResultLocationCell : UICollectionViewCell
     {
@@ -11,7 +11,7 @@ namespace iBeacon_simpleFingerprint
 
 		public UITextView TheText
 		{
-			get { return LocationDisplay; }
+			get { return LocationText; }
 		}
     }
 }

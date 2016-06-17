@@ -1,6 +1,6 @@
-# Version: 9.6.2.4 (cycle6-xi: d8bedd0)
+# Version: 9.8.0.323 (cycle7: 39ebb77)
 # [first argument, ignore] # /Users/bitterlukas/Projects/iBeacon_simpleFingerprint/iBeacon_simpleFingerprint/mtouch.exe
-/Library/Frameworks/Xamarin.iOS.framework/Versions/9.6.2.4/bin/mtouch \
+/Library/Frameworks/Xamarin.iOS.framework/Versions/9.8.0.323/bin/mtouch \
 	--cache \
 	/Users/bitterlukas/Projects/iBeacon_simpleFingerprint/iBeacon_simpleFingerprint/obj/iPhone/Debug/mtouch-cache \
 	--dev \
@@ -17,6 +17,8 @@
 	9.3 \
 	--aot-options=-O=float32 \
 	--new-refcount \
+	--http-message-handler=HttpClientHandler \
+	--tls-provider=default \
 	"--abi=armv7,arm64" \
 	--symbollist \
 	/Users/bitterlukas/Projects/iBeacon_simpleFingerprint/iBeacon_simpleFingerprint/obj/iPhone/Debug/mtouch-symbols.list \
