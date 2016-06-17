@@ -9,7 +9,7 @@ using System;
 using System.CodeDom.Compiler;
 using UIKit;
 
-namespace iBeacon_simpleFingerprint
+namespace IBeacon.SimpleFingerprint
 {
     [Register ("SecondViewController")]
     partial class SecondViewController

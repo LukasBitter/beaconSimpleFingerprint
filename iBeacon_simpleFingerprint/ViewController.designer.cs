@@ -9,7 +9,7 @@ using System;
 using System.CodeDom.Compiler;
 using UIKit;
 
-namespace iBeacon_simpleFingerprint
+namespace IBeacon.SimpleFingerprint
 {
     [Register ("ViewController")]
     partial class ViewController
@@ -20,19 +20,19 @@ namespace iBeacon_simpleFingerprint
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIButton ButtonGetPosition { get; set; }
+        UIKit.UITextView CurrentLocationText { get; set; }
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UITextView CurrentLocationText { get; set; }
+        UIKit.UILabel LabelPositionFound { get; set; }
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UICollectionView LocationCollection { get; set; }
 
-        [Action ("UIButton233_TouchUpInside:")]
+        [Action ("ButtonAddLocation_TouchUpInside:")]
         [GeneratedCode ("iOS Designer", "1.0")]
-        partial void UIButton233_TouchUpInside (UIKit.UIButton sender);
+        partial void ButtonAddLocation_TouchUpInside (UIKit.UIButton sender);
 
         void ReleaseDesignerOutlets ()
         {
@@ -41,14 +41,14 @@ namespace iBeacon_simpleFingerprint
                 ButtonAddLocation = null;
             }
 
-            if (ButtonGetPosition != null) {
-                ButtonGetPosition.Dispose ();
-                ButtonGetPosition = null;
-            }
-
             if (CurrentLocationText != null) {
                 CurrentLocationText.Dispose ();
                 CurrentLocationText = null;
+            }
+
+            if (LabelPositionFound != null) {
+                LabelPositionFound.Dispose ();
+                LabelPositionFound = null;
             }
 
             if (LocationCollection != null) {

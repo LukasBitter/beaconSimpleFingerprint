@@ -1,6 +1,6 @@
 ﻿using UIKit;
 
-namespace iBeacon_simpleFingerprint
+namespace IBeacon.SimpleFingerprint
 {
 	public class Application
 	{
