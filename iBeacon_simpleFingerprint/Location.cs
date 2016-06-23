@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using CoreLocation;
 
@@ -11,14 +12,14 @@ namespace IBeacon.SimpleFingerprint
 	public class Location
 	{
 		SortedList<int, CLBeacon> beaconsRanged;
-		int number;
+		public int Number;
 		public string Name;
 		public double DistanceTolerance;
 
 		public Location()
 		{
-			number = -1;
-			Name = "Location #" + number;
+			Number = -1;
+			Name = "Location #" + Number;
 			DistanceTolerance = 1;
 			beaconsRanged = new SortedList<int, CLBeacon>();
 		}
@@ -34,7 +35,7 @@ namespace IBeacon.SimpleFingerprint
 			foreach (var loc in _listLocations)
 			{
 				if (IsEqual(loc.beaconsRanged))
-					return loc.number - 1;
+					return loc.Number;
 			}
 			return -1;
 		}
@@ -45,6 +46,8 @@ namespace IBeacon.SimpleFingerprint
 		/// <param name="_listRangedBeacons">List ranged beacons.</param>
 		internal bool IsEqual(SortedList<int, CLBeacon> _listRangedBeacons)
 		{
+			Debug.WriteLine("List compare: ");
+			Debug.WriteLine("DIst tolerance = {0}", DistanceTolerance);
 			foreach (KeyValuePair<int, CLBeacon> kvp in _listRangedBeacons)
 			{
 				if (!beaconsRanged.ContainsKey(kvp.Key))

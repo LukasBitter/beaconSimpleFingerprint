@@ -16,9 +16,12 @@ namespace IBeacon.SimpleFingerprint
 		SortedList<int, CLBeacon> listRangedBeacons;
 		Location currentLocation;
 		int indexLocationList;
+		float distanceTolerance;
+
 
 		public ViewController (IntPtr handle) : base (handle)
 		{
+			
 		}
 
 		public override void ViewDidLoad ()
@@ -32,12 +35,22 @@ namespace IBeacon.SimpleFingerprint
 			LocationCollection.WeakDataSource = this;
 			CurrentLocationText.Text = "No location ranged yet";
 
+			distanceTolerance = SliderDistanceTolerance.Value;
+			LabelDistanceToleranceValue.Text = distanceTolerance.ToString();
+
 			locationManager.AuthorizationChanged += LocationManagerAuthorizationChanged;
 
 			locationManager.DidRangeBeacons += LocationManagerDidRangeBeacons;
 
 			locationManager.RequestAlwaysAuthorization();
+			SliderDistanceTolerance.ValueChanged += HandleSliderDistanceToleranceValueChanged;
 
+		}
+
+		void HandleSliderDistanceToleranceValueChanged(object sender, EventArgs e)
+		{
+			distanceTolerance = SliderDistanceTolerance.Value;
+			LabelDistanceToleranceValue.Text = string.Format("{0:0.0}", distanceTolerance);
 		}
 
 		partial void ButtonAddLocation_TouchUpInside(UIButton sender)
@@ -67,30 +80,27 @@ namespace IBeacon.SimpleFingerprint
 				}
 			}
 
-			if(listRangedBeacons.Count > 2)
+			if (listRangedBeacons.Count > 2)
 				NewLocation();
+			else
+				CurrentLocationText.Text = "Only " + listRangedBeacons.Count + " beacons in range \n Not enough to set position"; 
 		}
 
 		void NewLocation()
 		{
 			currentLocation = new Location();
 			currentLocation.Name = (listLocations.Count + 1).ToString();
+			currentLocation.Number = listLocations.Count;
+			currentLocation.DistanceTolerance = distanceTolerance;
 			currentLocation.AddBeacons(listRangedBeacons);
 
 			CurrentLocationText.Text = currentLocation.GetBeaconsText();
 
 			indexLocationList = currentLocation.InList(listLocations);
-			//Debug.WriteLine("inLocationList: {0}", inLocationList);
 			if (indexLocationList != -1)
 			{
+				Debug.WriteLine("indexLocationList: " + indexLocationList);
 				LabelPositionFound.Text = "Position: " + listLocations[indexLocationList].Name;
-				var indexPath = NSIndexPath.FromIndex((nuint)indexLocationList);
-				//Debug.WriteLine("desc: " + LocationCollection.GetDebugDescription());
-				//Debug.WriteLine("desc: " + indexPath.GetIndexes().First());
-				var ind = new NSIndexPath();
-				//Debug.WriteLine("desc: " + LocationCollection.CellForItem(indexPath).Description);
-				//Loca tionCollection.CellForItem(indexPath).BackgroundColor = UIColor.Green;
-				//Debug.WriteLine("position found: " + LocationCollection.CellForItem(indexPath).BackgroundColor.GetDebugDescription);
 			}
 			else
 				LabelPositionFound.Text = "Position: None found";

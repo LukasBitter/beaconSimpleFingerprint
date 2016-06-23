@@ -17,16 +17,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" id="210" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="150" y="80" width="250" height="150"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="top" id="210" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="150" y="81" width="250" height="175"/>
                                 <color key="backgroundColor" colorSpace="calibratedRGB" red="0.81960784313725488" green="0.81176470588235294" blue="0.82745098039215681" alpha="1"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <inset key="scrollIndicatorInsets" minX="10" minY="10" maxX="10" maxY="10"/>
                                 <constraints>
-                                    <constraint id="358" firstAttribute="width" constant="250"/>
-                                    <constraint id="359" firstAttribute="height" constant="150"/>
+                                    <constraint id="419" firstAttribute="width" constant="250"/>
+                                    <constraint id="420" firstAttribute="height" constant="175"/>
                                 </constraints>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="233" translatesAutoresizingMaskIntoConstraints="NO">
@@ -92,7 +92,25 @@
                                 </constraints>
                             </collectionView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Position: " lineBreakMode="tailTruncation" minimumFontSize="10" id="382" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="472" y="154" width="301" height="21"/>
+                                <rect key="frame" x="472" y="154" width="173" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="3" id="388" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" tag="0">
+                                <rect key="frame" x="678" y="155" width="301" height="31"/>
+                                <connections/>
+                            </slider>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Distance tolerance:" lineBreakMode="tailTruncation" minimumFontSize="10" id="389" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="678" y="125" width="156" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" minimumFontSize="10" id="390" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="842" y="125" width="94" height="21"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -100,12 +118,12 @@
                             </label>
                         </subviews>
                         <constraints>
-                            <constraint id="356" firstItem="210" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="150"/>
-                            <constraint id="357" firstItem="210" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="80"/>
                             <constraint id="360" firstItem="233" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20"/>
                             <constraint id="361" firstItem="233" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="144"/>
                             <constraint id="364" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="247" secondAttribute="trailing"/>
                             <constraint id="365" firstItem="8bC-Xf-vdC" firstAttribute="bottom" secondItem="247" secondAttribute="bottom"/>
+                            <constraint id="417" firstItem="210" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="150"/>
+                            <constraint id="418" firstItem="210" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="81"/>
                         </constraints>
                     </view>
                     <navigationItem title="Title" id="43" key="navigationItem"/>
@@ -114,6 +132,8 @@
                         <outlet property="ButtonAddLocation" destination="233" id="name-outlet-233"/>
                         <outlet property="LocationCollection" destination="247" id="name-outlet-247"/>
                         <outlet property="LabelPositionFound" destination="382" id="name-outlet-382"/>
+                        <outlet property="SliderDistanceTolerance" destination="388" id="name-outlet-388"/>
+                        <outlet property="LabelDistanceToleranceValue" destination="390" id="name-outlet-390"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

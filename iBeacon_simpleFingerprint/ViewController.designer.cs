@@ -24,11 +24,19 @@ namespace IBeacon.SimpleFingerprint
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel LabelDistanceToleranceValue { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UILabel LabelPositionFound { get; set; }
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UICollectionView LocationCollection { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UISlider SliderDistanceTolerance { get; set; }
 
         [Action ("ButtonAddLocation_TouchUpInside:")]
         [GeneratedCode ("iOS Designer", "1.0")]
@@ -46,6 +54,11 @@ namespace IBeacon.SimpleFingerprint
                 CurrentLocationText = null;
             }
 
+            if (LabelDistanceToleranceValue != null) {
+                LabelDistanceToleranceValue.Dispose ();
+                LabelDistanceToleranceValue = null;
+            }
+
             if (LabelPositionFound != null) {
                 LabelPositionFound.Dispose ();
                 LabelPositionFound = null;
@@ -54,6 +67,11 @@ namespace IBeacon.SimpleFingerprint
             if (LocationCollection != null) {
                 LocationCollection.Dispose ();
                 LocationCollection = null;
+            }
+
+            if (SliderDistanceTolerance != null) {
+                SliderDistanceTolerance.Dispose ();
+                SliderDistanceTolerance = null;
             }
         }
     }

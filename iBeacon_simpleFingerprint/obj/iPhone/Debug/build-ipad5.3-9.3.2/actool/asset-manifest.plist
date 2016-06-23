@@ -6,7 +6,7 @@
 	<dict>
 		<key>output-files</key>
 		<array>
-			<string>/Users/bitterlukas/Projects/iBeacon_simpleFingerprint/iBeacon_simpleFingerprint/obj/iPhone/Debug/build-ipad5.3-9.3.2/actool/partial-info.plist</string>
+			<string>/Users/bitterlukas/Projects/IBeacon.SimpleFingerprint/iBeacon_simpleFingerprint/obj/iPhone/Debug/build-ipad5.3-9.3.2/actool/partial-info.plist</string>
 		</array>
 	</dict>
 	<key>com.apple.actool.document.warnings</key>
@@ -17,7 +17,7 @@
 				<string>./AppIcons.appiconset/[car][120x120][][][1x][2d][(null)]</string>
 			</array>
 			<key>catalog</key>
-			<string>/Users/bitterlukas/Projects/iBeacon_simpleFingerprint/iBeacon_simpleFingerprint/Resources/Images.xcassets</string>
+			<string>/Users/bitterlukas/Projects/IBeacon.SimpleFingerprint/iBeacon_simpleFingerprint/Resources/Images.xcassets</string>
 			<key>message</key>
 			<string>The app icon set "AppIcons" has an unassigned child.</string>
 			<key>type</key>
