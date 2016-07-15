@@ -1,0 +1,42 @@
+# Version: 9.8.1.4 (c7sr0: 3cf8aae)
+# [first argument, ignore] # /Users/bitterlukas/Projects/IBeacon.SimpleFingerprint/iBeacon_simpleFingerprint/mtouch.exe
+/Library/Frameworks/Xamarin.iOS.framework/Versions/9.8.1.4/bin/mtouch \
+	--cache \
+	/Users/bitterlukas/Projects/IBeacon.SimpleFingerprint/iBeacon_simpleFingerprint/obj/iPhone/Debug/build-ipad5.3-9.3.2/mtouch-cache \
+	--dev \
+	/Users/bitterlukas/Projects/IBeacon.SimpleFingerprint/iBeacon_simpleFingerprint/bin/iPhone/Debug/build-ipad5.3-9.3.2/iBeacon_simpleFingerprint.app \
+	--executable \
+	iBeacon_simpleFingerprint \
+	--debug \
+	--linksdkonly \
+	--sdkroot \
+	/Applications/Xcode.app/Contents/Developer \
+	--sdk \
+	9.3 \
+	--targetver \
+	9.3 \
+	--aot-options=-O=float32 \
+	--new-refcount \
+	--http-message-handler=HttpClientHandler \
+	--tls-provider=default \
+	--abi=arm64 \
+	--symbollist \
+	/Users/bitterlukas/Projects/IBeacon.SimpleFingerprint/iBeacon_simpleFingerprint/obj/iPhone/Debug/build-ipad5.3-9.3.2/mtouch-symbols.list \
+	--dsym=no \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Xml.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Xamarin.iOS.dll \
+	-r \
+	/Users/bitterlukas/Projects/IBeacon.SimpleFingerprint/iBeacon_simpleFingerprint/bin/iPhone/Debug/Xamarin.Estimote.iOS.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Core.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/mscorlib.dll \
+	-r \
+	/Users/bitterlukas/Projects/IBeacon.SimpleFingerprint/iBeacon_simpleFingerprint/bin/iPhone/Debug/Xamarin.Estimote.iOS.dll \
+	--target-framework \
+	"Xamarin.iOS,v1.0" \
+	/Users/bitterlukas/Projects/IBeacon.SimpleFingerprint/iBeacon_simpleFingerprint/bin/iPhone/Debug//iBeacon_simpleFingerprint.exe \

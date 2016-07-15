@@ -1,0 +1,5 @@
+/Users/bitterlukas/Projects/IBeacon.SimpleFingerprint/iBeacon_simpleFingerprint/obj/iPhone/Debug/build-ipad5.3-9.3.2/mtouch-cache/Link/Xamarin.iOS.dll
+/Users/bitterlukas/Projects/IBeacon.SimpleFingerprint/iBeacon_simpleFingerprint/obj/iPhone/Debug/build-ipad5.3-9.3.2/mtouch-cache/Link/iBeacon_simpleFingerprint.exe
+/Users/bitterlukas/Projects/IBeacon.SimpleFingerprint/iBeacon_simpleFingerprint/obj/iPhone/Debug/build-ipad5.3-9.3.2/mtouch-cache/Link/System.dll
+/Users/bitterlukas/Projects/IBeacon.SimpleFingerprint/iBeacon_simpleFingerprint/obj/iPhone/Debug/build-ipad5.3-9.3.2/mtouch-cache/Link/mscorlib.dll
+/Users/bitterlukas/Projects/IBeacon.SimpleFingerprint/iBeacon_simpleFingerprint/obj/iPhone/Debug/build-ipad5.3-9.3.2/mtouch-cache/Link/System.Core.dll
