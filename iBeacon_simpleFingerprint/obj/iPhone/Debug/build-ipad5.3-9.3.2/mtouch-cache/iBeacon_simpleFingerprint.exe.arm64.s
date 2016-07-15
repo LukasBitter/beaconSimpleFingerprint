@@ -1038,6 +1038,57 @@ bl _p_18
 Lme_c:
 .text
 	.align 4
+	.no_dead_strip IBeacon_SimpleFingerprint_ViewController_DidReceiveMemoryWarning
+IBeacon_SimpleFingerprint_ViewController_DidReceiveMemoryWarning:
+.word 0xa9bc7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+
+adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
+add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
+ldr x16, [x16, #344]
+.word 0xf9000fb0
+.word 0xf9400a11
+.word 0xf90013b1
+.word 0xf9400fb1
+.word 0xf9403231
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94013b1
+.word 0xf9400231
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9405231
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9406231
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400ba0
+.word 0xf9001ba0
+.word 0xf9400fb1
+.word 0xf9407a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9401ba0
+bl _p_19
+.word 0xf9400fb1
+.word 0xf9409231
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf940a231
+.word 0xb4000051
+.word 0xd63f0220
+.word 0x910003bf
+.word 0xa8c47bfd
+.word 0xd65f03c0
+
+Lme_d:
+.text
+	.align 4
 	.no_dead_strip IBeacon_SimpleFingerprint_ViewController_HandleSliderDistanceToleranceValueChanged_object_System_EventArgs
 IBeacon_SimpleFingerprint_ViewController_HandleSliderDistanceToleranceValueChanged_object_System_EventArgs:
 .word 0xa9b87bfd
@@ -1049,7 +1100,7 @@ IBeacon_SimpleFingerprint_ViewController_HandleSliderDistanceToleranceValueChang
 
 adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
 add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
-ldr x16, [x16, #344]
+ldr x16, [x16, #352]
 .word 0xf90017b0
 .word 0xf9400a11
 .word 0xf9001bb1
@@ -1114,7 +1165,7 @@ bl _p_13
 
 adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
 add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
-ldr x0, [x16, #352]
+ldr x0, [x16, #360]
 .word 0xf9002ba0
 .word 0xaa1a03e0
 .word 0xbd408f40
@@ -1122,7 +1173,7 @@ ldr x0, [x16, #352]
 
 adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
 add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
-ldr x0, [x16, #360]
+ldr x0, [x16, #368]
 bl _p_8
 .word 0xfd4033a0
 .word 0xbd001000
@@ -1133,7 +1184,7 @@ bl _p_8
 .word 0xd63f0220
 .word 0xf9402ba0
 .word 0xf9402fa1
-bl _p_19
+bl _p_20
 .word 0xf90023a0
 .word 0xf94017b1
 .word 0xf9417e31
@@ -1158,7 +1209,7 @@ bl _p_19
 .word 0xa8c87bfd
 .word 0xd65f03c0
 
-Lme_d:
+Lme_e:
 .text
 	.align 4
 	.no_dead_strip IBeacon_SimpleFingerprint_ViewController_ButtonAddLocation_TouchUpInside_UIKit_UIButton
@@ -1171,7 +1222,7 @@ IBeacon_SimpleFingerprint_ViewController_ButtonAddLocation_TouchUpInside_UIKit_U
 
 adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
 add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
-ldr x16, [x16, #368]
+ldr x16, [x16, #376]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -1221,7 +1272,7 @@ ldr x16, [x16, #368]
 .word 0xf94027a2
 .word 0xaa0203e0
 .word 0xf940005e
-bl _p_20
+bl _p_21
 .word 0xf94013b1
 .word 0xf940f631
 .word 0xb4000051
@@ -1264,7 +1315,7 @@ bl _p_10
 .word 0xa8c57bfd
 .word 0xd65f03c0
 
-Lme_e:
+Lme_f:
 .text
 	.align 4
 	.no_dead_strip IBeacon_SimpleFingerprint_ViewController_LocationManagerDidRangeBeacons_object_CoreLocation_CLRegionBeaconsRangedEventArgs
@@ -1279,7 +1330,7 @@ IBeacon_SimpleFingerprint_ViewController_LocationManagerDidRangeBeacons_object_C
 
 adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
 add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
-ldr x16, [x16, #376]
+ldr x16, [x16, #384]
 .word 0xf9001fb0
 .word 0xf9400a11
 .word 0xf90023b1
@@ -1309,10 +1360,10 @@ ldr x16, [x16, #376]
 
 adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
 add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
-ldr x0, [x16, #384]
+ldr x0, [x16, #392]
 bl _p_8
 .word 0xf90047a0
-bl _p_21
+bl _p_22
 .word 0xf9401fb1
 .word 0xf940b631
 .word 0xb4000051
@@ -1340,7 +1391,7 @@ bl _p_3
 .word 0xf9403fa1
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_22
+bl _p_23
 .word 0xf9003ba0
 .word 0xf9401fb1
 .word 0xf9412a31
@@ -1350,7 +1401,7 @@ bl _p_22
 
 adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
 add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
-ldr x0, [x16, #392]
+ldr x0, [x16, #400]
 .word 0xf9400000
 .word 0xaa0103f7
 .word 0xb50003a0
@@ -1359,23 +1410,23 @@ ldr x0, [x16, #392]
 
 adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
 add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
-ldr x0, [x16, #400]
+ldr x0, [x16, #408]
 bl _p_8
 .word 0xaa0003e1
 
 adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
 add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
-ldr x0, [x16, #408]
+ldr x0, [x16, #416]
 .word 0xf9001420
 
 adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
 add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
-ldr x0, [x16, #416]
+ldr x0, [x16, #424]
 .word 0xf9002020
 
 adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
 add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
-ldr x0, [x16, #424]
+ldr x0, [x16, #432]
 .word 0xf9401402
 .word 0xf9000c22
 .word 0xf9401000
@@ -1385,13 +1436,13 @@ ldr x0, [x16, #424]
 
 adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
 add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
-ldr x0, [x16, #392]
+ldr x0, [x16, #400]
 .word 0xf9000001
 .word 0xaa1703e0
 
 adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
 add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
-ldr x0, [x16, #392]
+ldr x0, [x16, #400]
 .word 0xf9400000
 .word 0xf90043a0
 .word 0xf9401fb1
@@ -1402,9 +1453,9 @@ ldr x0, [x16, #392]
 
 adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
 add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
-ldr x15, [x16, #432]
+ldr x15, [x16, #440]
 .word 0xaa1703e0
-bl _p_23
+bl _p_24
 .word 0xf9003fa0
 .word 0xf9401fb1
 .word 0xf9420a31
@@ -1416,7 +1467,7 @@ bl _p_23
 
 adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
 add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
-ldr x15, [x16, #440]
+ldr x15, [x16, #448]
 .word 0x928005f0
 .word 0xf2bffff0
 .word 0xf8706830
@@ -1449,7 +1500,7 @@ ldr x15, [x16, #440]
 
 adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
 add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
-ldr x15, [x16, #448]
+ldr x15, [x16, #456]
 .word 0x928001f0
 .word 0xf2bffff0
 .word 0xf8706830
@@ -1483,7 +1534,7 @@ ldr x15, [x16, #448]
 .word 0xf94043a2
 .word 0xaa0203e0
 .word 0xf940005e
-bl _p_24
+bl _p_25
 .word 0x53001c00
 .word 0xf9003ba0
 .word 0xf9401fb1
@@ -1517,7 +1568,7 @@ bl _p_24
 .word 0xf94043a1
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_25
+bl _p_26
 .word 0x93407c00
 .word 0xf9003ba0
 .word 0xf9401fb1
@@ -1534,7 +1585,7 @@ bl _p_25
 .word 0xaa0303e0
 .word 0xaa1803e2
 .word 0xf940007e
-bl _p_26
+bl _p_27
 .word 0xf9401fb1
 .word 0xf9440631
 .word 0xb4000051
@@ -1559,7 +1610,7 @@ bl _p_26
 
 adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
 add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
-ldr x15, [x16, #456]
+ldr x15, [x16, #464]
 .word 0x92800ef0
 .word 0xf2bffff0
 .word 0xf8706830
@@ -1589,7 +1640,7 @@ ldr x15, [x16, #456]
 
 adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
 add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
-ldr x15, [x16, #464]
+ldr x15, [x16, #472]
 .word 0x928004f0
 .word 0xf2bffff0
 .word 0xf8706830
@@ -1618,7 +1669,7 @@ ldr x15, [x16, #464]
 .word 0xf9403fa1
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_25
+bl _p_26
 .word 0x93407c00
 .word 0xf9003ba0
 .word 0xf9401fb1
@@ -1644,7 +1695,7 @@ bl _p_25
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xaa1903e0
-bl _p_27
+bl _p_28
 .word 0xf9401fb1
 .word 0xf945b631
 .word 0xb4000051
@@ -1673,7 +1724,7 @@ bl _p_11
 
 adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
 add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
-ldr x0, [x16, #472]
+ldr x0, [x16, #480]
 .word 0xf90043a0
 .word 0xaa1903e0
 .word 0xf9402720
@@ -1685,7 +1736,7 @@ ldr x0, [x16, #472]
 .word 0xf9404ba1
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_25
+bl _p_26
 .word 0x93407c00
 .word 0xf90047a0
 .word 0xf9401fb1
@@ -1695,7 +1746,7 @@ bl _p_25
 
 adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
 add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
-ldr x0, [x16, #480]
+ldr x0, [x16, #488]
 bl _p_8
 .word 0xaa0003e1
 .word 0xf94043a0
@@ -1704,8 +1755,8 @@ bl _p_8
 
 adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
 add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
-ldr x2, [x16, #488]
-bl _p_28
+ldr x2, [x16, #496]
+bl _p_29
 .word 0xf9003ba0
 .word 0xf9401fb1
 .word 0xf946a231
@@ -1735,384 +1786,6 @@ bl _p_28
 .word 0xa8ca7bfd
 .word 0xd65f03c0
 
-Lme_f:
-.text
-	.align 4
-	.no_dead_strip IBeacon_SimpleFingerprint_ViewController_NewLocation
-IBeacon_SimpleFingerprint_ViewController_NewLocation:
-.word 0xa9b27bfd
-.word 0x910003fd
-.word 0xf9000bba
-.word 0xaa0003fa
-
-adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
-add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
-ldr x16, [x16, #496]
-.word 0xf9000fb0
-.word 0xf9400a11
-.word 0xf90013b1
-.word 0xb90033bf
-.word 0xf9400fb1
-.word 0xf9403a31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9400231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9405a31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9406a31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xaa1a03e0
-.word 0xf9400fb1
-.word 0xf9407e31
-.word 0xb4000051
-.word 0xd63f0220
-
-adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
-add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
-ldr x0, [x16, #504]
-bl _p_8
-.word 0xf9006ba0
-bl _p_29
-.word 0xf9400fb1
-.word 0xf940a631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9406ba0
-.word 0xf90067a0
-.word 0xf9002b40
-.word 0x91014340
-bl _p_3
-.word 0xf94067a0
-.word 0xf9400fb1
-.word 0xf940ce31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xaa1a03e0
-.word 0xf9402b40
-.word 0xf90053a0
-.word 0xaa1a03e0
-.word 0xf9402340
-.word 0xf90063a0
-.word 0xf9400fb1
-.word 0xf940f631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94063a1
-.word 0xaa0103e0
-.word 0xf940003e
-bl _p_30
-.word 0x93407c00
-.word 0xf9005fa0
-.word 0xf9400fb1
-.word 0xf9411e31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9405fa0
-.word 0x11000400
-.word 0xb90033a0
-.word 0x9100c3a0
-.word 0xf9005ba0
-.word 0xf9400fb1
-.word 0xf9414231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9405ba0
-bl _p_31
-.word 0xf90057a0
-.word 0xf9400fb1
-.word 0xf9415e31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94053a0
-.word 0xf94057a1
-.word 0xf9004fa1
-.word 0xf9000c01
-.word 0x91006000
-bl _p_3
-.word 0xf9404fa0
-.word 0xf9400fb1
-.word 0xf9418a31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xaa1a03e0
-.word 0xf9402b40
-.word 0xf90043a0
-.word 0xaa1a03e0
-.word 0xf9402340
-.word 0xf9004ba0
-.word 0xf9400fb1
-.word 0xf941b231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9404ba1
-.word 0xaa0103e0
-.word 0xf940003e
-bl _p_30
-.word 0x93407c00
-.word 0xf90047a0
-.word 0xf9400fb1
-.word 0xf941da31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94043a0
-.word 0xf94047a1
-.word 0xb9002001
-.word 0xf9400fb1
-.word 0xf941f631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xaa1a03e0
-.word 0xf9402b40
-.word 0xaa1a03e1
-.word 0xbd408f40
-.word 0x1e22c000
-.word 0xfd001400
-.word 0xf9400fb1
-.word 0xf9421e31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xaa1a03e0
-.word 0xf9402b40
-.word 0xf9003fa0
-.word 0xaa1a03e0
-.word 0xf9402740
-.word 0xf9003ba0
-.word 0xf9400fb1
-.word 0xf9424631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9403ba1
-.word 0xf9403fa2
-.word 0xaa0203e0
-.word 0xf940005e
-bl _p_32
-.word 0xf9400fb1
-.word 0xf9426a31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xaa1a03e0
-.word 0xf9400fb1
-.word 0xf9427e31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xaa1a03e0
-bl _p_11
-.word 0xf90033a0
-.word 0xf9400fb1
-.word 0xf9429a31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xaa1a03e0
-.word 0xf9402b40
-.word 0xf90037a0
-.word 0xf9400fb1
-.word 0xf942b631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94037a1
-.word 0xaa0103e0
-.word 0xf940003e
-bl _p_33
-.word 0xf9002fa0
-.word 0xf9400fb1
-.word 0xf942da31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9402fa1
-.word 0xf94033a2
-.word 0xaa0203e0
-.word 0xf9400042
-.word 0xf9423850
-.word 0xd63f0200
-.word 0xf9400fb1
-.word 0xf9430231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xaa1a03e0
-.word 0xaa1a03e0
-.word 0xf9402b40
-.word 0xf9002ba0
-.word 0xaa1a03e0
-.word 0xf9402340
-.word 0xf90027a0
-.word 0xf9400fb1
-.word 0xf9432e31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94027a1
-.word 0xf9402ba2
-.word 0xaa0203e0
-.word 0xf940005e
-bl _p_34
-.word 0x93407c00
-.word 0xf90023a0
-.word 0xf9400fb1
-.word 0xf9435a31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94023a0
-.word 0xb9008b40
-.word 0xf9400fb1
-.word 0xf9437231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xaa1a03e0
-.word 0xb9808b40
-.word 0x92800001
-.word 0xf2bfffe1
-.word 0x9280001e
-.word 0xf2bffffe
-.word 0x6b1e001f
-.word 0x54000b80
-.word 0xf9400fb1
-.word 0xf943a231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf943b231
-.word 0xb4000051
-.word 0xd63f0220
-
-adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
-add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
-ldr x0, [x16, #512]
-.word 0xf9003fa0
-.word 0xaa1a03e0
-.word 0xb9808b40
-.word 0xf90043a0
-
-adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
-add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
-ldr x0, [x16, #480]
-bl _p_8
-.word 0xaa0003e1
-.word 0xf9403fa0
-.word 0xf94043a2
-.word 0xb9001022
-bl _p_35
-.word 0xf9003ba0
-.word 0xf9400fb1
-.word 0xf9440631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9403ba0
-bl _p_36
-.word 0xf9400fb1
-.word 0xf9441e31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xaa1a03e0
-.word 0xf9400fb1
-.word 0xf9443231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xaa1a03e0
-bl _p_37
-.word 0xf90027a0
-.word 0xf9400fb1
-.word 0xf9444e31
-.word 0xb4000051
-.word 0xd63f0220
-
-adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
-add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
-ldr x0, [x16, #520]
-.word 0xf9002ba0
-.word 0xaa1a03e0
-.word 0xf9402340
-.word 0xf90037a0
-.word 0xaa1a03e0
-.word 0xb9808b40
-.word 0xf90033a0
-.word 0xf9400fb1
-.word 0xf9448631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94033a1
-.word 0xf94037a2
-.word 0xaa0203e0
-.word 0xf940005e
-bl _p_38
-.word 0xf9002fa0
-.word 0xf9400fb1
-.word 0xf944ae31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9402ba0
-.word 0xf9402fa1
-.word 0xf9400c21
-bl _p_39
-.word 0xf90023a0
-.word 0xf9400fb1
-.word 0xf944d231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94023a1
-.word 0xf94027a2
-.word 0xaa0203e0
-.word 0xf9400042
-.word 0xf9416c50
-.word 0xd63f0200
-.word 0xf9400fb1
-.word 0xf944fa31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0x1400001f
-.word 0xf9400fb1
-.word 0xf9450e31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xaa1a03e0
-.word 0xf9400fb1
-.word 0xf9452231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xaa1a03e0
-bl _p_37
-.word 0xf90027a0
-.word 0xf9400fb1
-.word 0xf9453e31
-.word 0xb4000051
-.word 0xd63f0220
-
-adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
-add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
-ldr x0, [x16, #528]
-.word 0xf90023a0
-.word 0xf9400fb1
-.word 0xf9455e31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94023a1
-.word 0xf94027a2
-.word 0xaa0203e0
-.word 0xf9400042
-.word 0xf9416c50
-.word 0xd63f0200
-.word 0xf94013b1
-.word 0xf9400231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf9459631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400fb1
-.word 0xf945a631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9400bba
-.word 0x910003bf
-.word 0xa8ce7bfd
-.word 0xd65f03c0
-
 Lme_10:
 .text
 	.align 4
@@ -2128,7 +1801,7 @@ IBeacon_SimpleFingerprint_ViewController_LocationManagerAuthorizationChanged_obj
 
 adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
 add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
-ldr x16, [x16, #536]
+ldr x16, [x16, #504]
 .word 0xf9001bb0
 .word 0xf9400a11
 .word 0xf9001fb1
@@ -2151,15 +1824,15 @@ ldr x16, [x16, #536]
 
 adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
 add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
-ldr x0, [x16, #544]
+ldr x0, [x16, #512]
 .word 0xf9002fa0
 .word 0xd2800020
 
 adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
 add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
-ldr x0, [x16, #552]
+ldr x0, [x16, #520]
 .word 0xd2800021
-bl _p_40
+bl _p_30
 .word 0xaa0003f8
 .word 0xaa1803e0
 .word 0xf90033a0
@@ -2173,7 +1846,7 @@ bl _p_40
 .word 0xd63f0220
 .word 0xaa1a03e0
 .word 0xf940035e
-bl _p_41
+bl _p_31
 .word 0xf90037a0
 .word 0xf9401bb1
 .word 0xf940e631
@@ -2182,7 +1855,7 @@ bl _p_41
 
 adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
 add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
-ldr x0, [x16, #560]
+ldr x0, [x16, #528]
 bl _p_8
 .word 0xaa0003e2
 .word 0xf94037a0
@@ -2199,7 +1872,7 @@ bl _p_8
 .word 0xd63f0220
 .word 0xf9402fa0
 .word 0xf94033a1
-bl _p_42
+bl _p_32
 .word 0xf9401bb1
 .word 0xf9414631
 .word 0xb4000051
@@ -2211,7 +1884,7 @@ bl _p_42
 .word 0xd63f0220
 .word 0xaa1a03e0
 .word 0xf940035e
-bl _p_41
+bl _p_31
 .word 0xf9002ba0
 .word 0xf9401bb1
 .word 0xf9417a31
@@ -2234,7 +1907,7 @@ bl _p_41
 
 adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
 add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
-ldr x0, [x16, #568]
+ldr x0, [x16, #536]
 .word 0xf90043a0
 .word 0xf9401bb1
 .word 0xf941d231
@@ -2243,11 +1916,11 @@ ldr x0, [x16, #568]
 
 adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
 add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
-ldr x0, [x16, #576]
+ldr x0, [x16, #544]
 bl _p_6
 .word 0xf94043a1
 .word 0xf9003ba0
-bl _p_43
+bl _p_33
 .word 0xf9401bb1
 .word 0xf941fe31
 .word 0xb4000051
@@ -2255,7 +1928,7 @@ bl _p_43
 
 adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
 add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
-ldr x0, [x16, #584]
+ldr x0, [x16, #552]
 .word 0xf9003fa0
 .word 0xf9401bb1
 .word 0xf9421e31
@@ -2264,12 +1937,12 @@ ldr x0, [x16, #584]
 
 adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
 add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
-ldr x0, [x16, #592]
+ldr x0, [x16, #560]
 bl _p_6
 .word 0xf9403ba1
 .word 0xf9403fa2
 .word 0xf90037a0
-bl _p_44
+bl _p_34
 .word 0xf9401bb1
 .word 0xf9424e31
 .word 0xb4000051
@@ -2325,20 +1998,22 @@ bl _p_3
 Lme_11:
 .text
 	.align 4
-	.no_dead_strip IBeacon_SimpleFingerprint_ViewController_DidReceiveMemoryWarning
-IBeacon_SimpleFingerprint_ViewController_DidReceiveMemoryWarning:
-.word 0xa9bc7bfd
+	.no_dead_strip IBeacon_SimpleFingerprint_ViewController_NewLocation
+IBeacon_SimpleFingerprint_ViewController_NewLocation:
+.word 0xa9b27bfd
 .word 0x910003fd
-.word 0xf9000ba0
+.word 0xf9000bba
+.word 0xaa0003fa
 
 adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
 add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
-ldr x16, [x16, #600]
+ldr x16, [x16, #568]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
+.word 0xb90033bf
 .word 0xf9400fb1
-.word 0xf9403231
+.word 0xf9403a31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf94013b1
@@ -2346,31 +2021,356 @@ ldr x16, [x16, #600]
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf9400fb1
-.word 0xf9405231
+.word 0xf9405a31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf9400fb1
-.word 0xf9406231
+.word 0xf9406a31
 .word 0xb4000051
 .word 0xd63f0220
-.word 0xf9400ba0
-.word 0xf9001ba0
+.word 0xaa1a03e0
 .word 0xf9400fb1
-.word 0xf9407a31
+.word 0xf9407e31
 .word 0xb4000051
 .word 0xd63f0220
-.word 0xf9401ba0
+
+adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
+add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
+ldr x0, [x16, #576]
+bl _p_8
+.word 0xf9006ba0
+bl _p_35
+.word 0xf9400fb1
+.word 0xf940a631
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9406ba0
+.word 0xf90067a0
+.word 0xf9002b40
+.word 0x91014340
+bl _p_3
+.word 0xf94067a0
+.word 0xf9400fb1
+.word 0xf940ce31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xaa1a03e0
+.word 0xf9402b40
+.word 0xf90053a0
+.word 0xaa1a03e0
+.word 0xf9402340
+.word 0xf90063a0
+.word 0xf9400fb1
+.word 0xf940f631
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94063a1
+.word 0xaa0103e0
+.word 0xf940003e
+bl _p_36
+.word 0x93407c00
+.word 0xf9005fa0
+.word 0xf9400fb1
+.word 0xf9411e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9405fa0
+.word 0x11000400
+.word 0xb90033a0
+.word 0x9100c3a0
+.word 0xf9005ba0
+.word 0xf9400fb1
+.word 0xf9414231
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9405ba0
+bl _p_37
+.word 0xf90057a0
+.word 0xf9400fb1
+.word 0xf9415e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94053a0
+.word 0xf94057a1
+.word 0xf9004fa1
+.word 0xf9000c01
+.word 0x91006000
+bl _p_3
+.word 0xf9404fa0
+.word 0xf9400fb1
+.word 0xf9418a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xaa1a03e0
+.word 0xf9402b40
+.word 0xf90043a0
+.word 0xaa1a03e0
+.word 0xf9402340
+.word 0xf9004ba0
+.word 0xf9400fb1
+.word 0xf941b231
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9404ba1
+.word 0xaa0103e0
+.word 0xf940003e
+bl _p_36
+.word 0x93407c00
+.word 0xf90047a0
+.word 0xf9400fb1
+.word 0xf941da31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94043a0
+.word 0xf94047a1
+.word 0xb9002001
+.word 0xf9400fb1
+.word 0xf941f631
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xaa1a03e0
+.word 0xf9402b40
+.word 0xaa1a03e1
+.word 0xbd408f40
+.word 0x1e22c000
+.word 0xfd001400
+.word 0xf9400fb1
+.word 0xf9421e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xaa1a03e0
+.word 0xf9402b40
+.word 0xf9003fa0
+.word 0xaa1a03e0
+.word 0xf9402740
+.word 0xf9003ba0
+.word 0xf9400fb1
+.word 0xf9424631
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9403ba1
+.word 0xf9403fa2
+.word 0xaa0203e0
+.word 0xf940005e
+bl _p_38
+.word 0xf9400fb1
+.word 0xf9426a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xaa1a03e0
+.word 0xf9400fb1
+.word 0xf9427e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xaa1a03e0
+bl _p_11
+.word 0xf90033a0
+.word 0xf9400fb1
+.word 0xf9429a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xaa1a03e0
+.word 0xf9402b40
+.word 0xf90037a0
+.word 0xf9400fb1
+.word 0xf942b631
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94037a1
+.word 0xaa0103e0
+.word 0xf940003e
+bl _p_39
+.word 0xf9002fa0
+.word 0xf9400fb1
+.word 0xf942da31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9402fa1
+.word 0xf94033a2
+.word 0xaa0203e0
+.word 0xf9400042
+.word 0xf9423850
+.word 0xd63f0200
+.word 0xf9400fb1
+.word 0xf9430231
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xaa1a03e0
+.word 0xaa1a03e0
+.word 0xf9402b40
+.word 0xf9002ba0
+.word 0xaa1a03e0
+.word 0xf9402340
+.word 0xf90027a0
+.word 0xf9400fb1
+.word 0xf9432e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94027a1
+.word 0xf9402ba2
+.word 0xaa0203e0
+.word 0xf940005e
+bl _p_40
+.word 0x93407c00
+.word 0xf90023a0
+.word 0xf9400fb1
+.word 0xf9435a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94023a0
+.word 0xb9008b40
+.word 0xf9400fb1
+.word 0xf9437231
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xaa1a03e0
+.word 0xb9808b40
+.word 0x92800001
+.word 0xf2bfffe1
+.word 0x9280001e
+.word 0xf2bffffe
+.word 0x6b1e001f
+.word 0x54000b80
+.word 0xf9400fb1
+.word 0xf943a231
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf943b231
+.word 0xb4000051
+.word 0xd63f0220
+
+adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
+add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
+ldr x0, [x16, #584]
+.word 0xf9003fa0
+.word 0xaa1a03e0
+.word 0xb9808b40
+.word 0xf90043a0
+
+adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
+add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
+ldr x0, [x16, #488]
+bl _p_8
+.word 0xaa0003e1
+.word 0xf9403fa0
+.word 0xf94043a2
+.word 0xb9001022
+bl _p_41
+.word 0xf9003ba0
+.word 0xf9400fb1
+.word 0xf9440631
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9403ba0
+bl _p_42
+.word 0xf9400fb1
+.word 0xf9441e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xaa1a03e0
+.word 0xf9400fb1
+.word 0xf9443231
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xaa1a03e0
+bl _p_43
+.word 0xf90027a0
+.word 0xf9400fb1
+.word 0xf9444e31
+.word 0xb4000051
+.word 0xd63f0220
+
+adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
+add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
+ldr x0, [x16, #592]
+.word 0xf9002ba0
+.word 0xaa1a03e0
+.word 0xf9402340
+.word 0xf90037a0
+.word 0xaa1a03e0
+.word 0xb9808b40
+.word 0xf90033a0
+.word 0xf9400fb1
+.word 0xf9448631
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94033a1
+.word 0xf94037a2
+.word 0xaa0203e0
+.word 0xf940005e
+bl _p_44
+.word 0xf9002fa0
+.word 0xf9400fb1
+.word 0xf944ae31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9402ba0
+.word 0xf9402fa1
+.word 0xf9400c21
 bl _p_45
+.word 0xf90023a0
 .word 0xf9400fb1
-.word 0xf9409231
+.word 0xf944d231
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94023a1
+.word 0xf94027a2
+.word 0xaa0203e0
+.word 0xf9400042
+.word 0xf9416c50
+.word 0xd63f0200
+.word 0xf9400fb1
+.word 0xf944fa31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0x1400001f
+.word 0xf9400fb1
+.word 0xf9450e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xaa1a03e0
+.word 0xf9400fb1
+.word 0xf9452231
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xaa1a03e0
+bl _p_43
+.word 0xf90027a0
+.word 0xf9400fb1
+.word 0xf9453e31
+.word 0xb4000051
+.word 0xd63f0220
+
+adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
+add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
+ldr x0, [x16, #600]
+.word 0xf90023a0
+.word 0xf9400fb1
+.word 0xf9455e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94023a1
+.word 0xf94027a2
+.word 0xaa0203e0
+.word 0xf9400042
+.word 0xf9416c50
+.word 0xd63f0200
+.word 0xf94013b1
+.word 0xf9400231
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf9400fb1
-.word 0xf940a231
+.word 0xf9459631
 .word 0xb4000051
 .word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf945a631
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400bba
 .word 0x910003bf
-.word 0xa8c47bfd
+.word 0xa8ce7bfd
 .word 0xd65f03c0
 
 Lme_12:
@@ -2558,7 +2558,7 @@ bl _p_48
 .word 0xf94067a2
 .word 0xaa0203e0
 .word 0xf940005e
-bl _p_38
+bl _p_44
 .word 0xf9005fa0
 .word 0xf9402bb1
 .word 0xf9419e31
@@ -2589,7 +2589,7 @@ bl _p_49
 adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
 add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
 ldr x1, [x16, #648]
-bl _p_39
+bl _p_45
 .word 0xf90057a0
 .word 0xf9402bb1
 .word 0xf9421631
@@ -2646,7 +2646,7 @@ bl _p_49
 .word 0xf9404ba1
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_33
+bl _p_39
 .word 0xf90047a0
 .word 0xf9402bb1
 .word 0xf942fa31
@@ -2654,7 +2654,7 @@ bl _p_33
 .word 0xd63f0220
 .word 0xf94043a0
 .word 0xf94047a1
-bl _p_39
+bl _p_45
 .word 0xf9003ba0
 .word 0xf9402bb1
 .word 0xf9431a31
@@ -3430,7 +3430,7 @@ bl _p_54
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xaa1a03e0
-bl _p_37
+bl _p_43
 .word 0xf9001ba0
 .word 0xf9400fb1
 .word 0xf9438a31
@@ -3452,7 +3452,7 @@ bl _p_37
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xaa1a03e0
-bl _p_37
+bl _p_43
 .word 0xf9001ba0
 .word 0xf9400fb1
 .word 0xf943e231
@@ -3760,13 +3760,13 @@ ldr x0, [x16, #776]
 
 adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
 add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
-ldr x0, [x16, #480]
+ldr x0, [x16, #488]
 bl _p_8
 .word 0xaa0003e1
 .word 0xf9402ba0
 .word 0xf9402fa2
 .word 0xb9001022
-bl _p_35
+bl _p_41
 .word 0xf90027a0
 .word 0xf9400fb1
 .word 0xf940fa31
@@ -3799,10 +3799,10 @@ bl _p_3
 
 adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
 add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
-ldr x0, [x16, #384]
+ldr x0, [x16, #392]
 bl _p_8
 .word 0xf9001fa0
-bl _p_21
+bl _p_22
 .word 0xf9400fb1
 .word 0xf9418231
 .word 0xb4000051
@@ -4102,7 +4102,7 @@ ldr x0, [x16, #808]
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf9408ba0
-bl _p_36
+bl _p_42
 .word 0xf9402bb1
 .word 0xf940de31
 .word 0xb4000051
@@ -4116,9 +4116,9 @@ ldr x0, [x16, #816]
 
 adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
 add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
-ldr x0, [x16, #552]
+ldr x0, [x16, #520]
 .word 0xd2800021
-bl _p_40
+bl _p_30
 .word 0xaa0003f7
 .word 0xaa1703e0
 .word 0xf9007fa0
@@ -4148,7 +4148,7 @@ bl _p_8
 .word 0xd63f0220
 .word 0xf9407ba0
 .word 0xf9407fa1
-bl _p_42
+bl _p_32
 .word 0xf9402bb1
 .word 0xf9418a31
 .word 0xb4000051
@@ -4279,7 +4279,7 @@ ldr x0, [x16, #848]
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf94073a0
-bl _p_36
+bl _p_42
 .word 0xf9402bb1
 .word 0xf9438a31
 .word 0xb4000051
@@ -4346,9 +4346,9 @@ bl _p_66
 
 adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
 add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
-ldr x0, [x16, #552]
+ldr x0, [x16, #520]
 .word 0xd2800101
-bl _p_40
+bl _p_30
 .word 0xaa0003f6
 .word 0xaa1603e0
 .word 0xf900f7a0
@@ -4391,7 +4391,7 @@ bl _p_64
 
 adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
 add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
-ldr x0, [x16, #480]
+ldr x0, [x16, #488]
 bl _p_8
 .word 0xaa0003e2
 .word 0xf940eba0
@@ -4470,7 +4470,7 @@ bl _p_8
 .word 0xd63f0220
 .word 0xf940cfa0
 .word 0xf940d3a1
-bl _p_19
+bl _p_20
 .word 0xf900c7a0
 .word 0xf9402bb1
 .word 0xf9466631
@@ -4529,7 +4529,7 @@ bl _p_8
 .word 0xd63f0220
 .word 0xf940b3a0
 .word 0xf940b7a1
-bl _p_19
+bl _p_20
 .word 0xf900aba0
 .word 0xf9402bb1
 .word 0xf9474631
@@ -4588,7 +4588,7 @@ bl _p_8
 .word 0xd63f0220
 .word 0xf94097a0
 .word 0xf9409ba1
-bl _p_19
+bl _p_20
 .word 0xf90093a0
 .word 0xf9402bb1
 .word 0xf9482631
@@ -4609,7 +4609,7 @@ bl _p_68
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf9407fa0
-bl _p_36
+bl _p_42
 .word 0xf9402bb1
 .word 0xf9487631
 .word 0xb4000051
@@ -4704,7 +4704,7 @@ ldr x0, [x16, #896]
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf94073a0
-bl _p_36
+bl _p_42
 .word 0xf9402bb1
 .word 0xf949e631
 .word 0xb4000051
@@ -4732,7 +4732,7 @@ bl _p_36
 
 adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
 add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
-ldr x15, [x16, #456]
+ldr x15, [x16, #464]
 .word 0x92800ef0
 .word 0xf2bffff0
 .word 0xf8706830
@@ -4762,7 +4762,7 @@ ldr x15, [x16, #456]
 
 adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
 add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
-ldr x15, [x16, #464]
+ldr x15, [x16, #472]
 .word 0x928004f0
 .word 0xf2bffff0
 .word 0xf8706830
@@ -4791,7 +4791,7 @@ ldr x0, [x16, #904]
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf94073a0
-bl _p_36
+bl _p_42
 .word 0xf9402bb1
 .word 0xf94b3631
 .word 0xb4000051
@@ -4921,7 +4921,7 @@ ldr x1, [x16, #928]
 .word 0xf94033a1
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_25
+bl _p_26
 .word 0x93407c00
 .word 0xf9002ba0
 .word 0xf9401bb1
@@ -4938,7 +4938,7 @@ bl _p_25
 .word 0xaa0303e0
 .word 0xaa1703e2
 .word 0xf940007e
-bl _p_26
+bl _p_27
 .word 0xf9401bb1
 .word 0xf941be31
 .word 0xb4000051
@@ -5101,7 +5101,7 @@ bl _p_70
 
 adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
 add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
-ldr x15, [x16, #456]
+ldr x15, [x16, #464]
 .word 0x92800ef0
 .word 0xf2bffff0
 .word 0xf8706830
@@ -5131,7 +5131,7 @@ ldr x15, [x16, #456]
 
 adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
 add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
-ldr x15, [x16, #464]
+ldr x15, [x16, #472]
 .word 0x928004f0
 .word 0xf2bffff0
 .word 0xf8706830
@@ -5209,7 +5209,7 @@ ldr x0, [x16, #952]
 .word 0xf94037a1
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_25
+bl _p_26
 .word 0x93407c00
 .word 0xf90033a0
 .word 0xf9401bb1
@@ -5219,7 +5219,7 @@ bl _p_25
 
 adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
 add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
-ldr x0, [x16, #480]
+ldr x0, [x16, #488]
 bl _p_8
 .word 0xaa0003e1
 .word 0xf9402fa0
@@ -5229,14 +5229,14 @@ bl _p_8
 adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
 add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
 ldr x2, [x16, #960]
-bl _p_28
+bl _p_29
 .word 0xf9002ba0
 .word 0xf9401bb1
 .word 0xf9410a31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf9402ba0
-bl _p_36
+bl _p_42
 .word 0xf9401bb1
 .word 0xf9412231
 .word 0xb4000051
@@ -5316,7 +5316,7 @@ bl _p_8
 .word 0xd63f0220
 .word 0xf9404fa0
 .word 0xf94053a1
-bl _p_19
+bl _p_20
 .word 0xf9004ba0
 .word 0xf9401bb1
 .word 0xf9425a31
@@ -5324,7 +5324,7 @@ bl _p_19
 .word 0xd63f0220
 .word 0xf94047a0
 .word 0xf9404ba1
-bl _p_39
+bl _p_45
 .word 0xf9002ba0
 .word 0xf9401bb1
 .word 0xf9427a31
@@ -5334,9 +5334,9 @@ bl _p_39
 
 adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
 add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
-ldr x0, [x16, #552]
+ldr x0, [x16, #520]
 .word 0xd2800041
-bl _p_40
+bl _p_30
 .word 0xaa0003f8
 .word 0xaa1803e0
 .word 0xf9003fa0
@@ -5347,7 +5347,7 @@ bl _p_40
 
 adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
 add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
-ldr x0, [x16, #480]
+ldr x0, [x16, #488]
 bl _p_8
 .word 0xaa0003e2
 .word 0xf94043a3
@@ -5393,7 +5393,7 @@ bl _p_8
 .word 0xd63f0220
 .word 0xf9402ba0
 .word 0xf9402fa1
-bl _p_42
+bl _p_32
 .word 0xf9401bb1
 .word 0xf9438231
 .word 0xb4000051
@@ -5424,7 +5424,7 @@ bl _p_42
 .word 0xf9402fa1
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_25
+bl _p_26
 .word 0x93407c00
 .word 0xf9002ba0
 .word 0xf9401bb1
@@ -5538,9 +5538,9 @@ bl _p_71
 
 adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
 add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
-ldr x0, [x16, #552]
+ldr x0, [x16, #520]
 .word 0xd2800101
-bl _p_40
+bl _p_30
 .word 0xaa0003f5
 .word 0xaa1503e0
 .word 0xf9009ba0
@@ -5578,7 +5578,7 @@ ldr x2, [x16, #992]
 
 adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
 add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
-ldr x0, [x16, #480]
+ldr x0, [x16, #488]
 bl _p_8
 .word 0xaa0003e2
 .word 0xf94093a3
@@ -5690,7 +5690,7 @@ bl _p_8
 .word 0xd63f0220
 .word 0xf94067a0
 .word 0xf9406ba1
-bl _p_19
+bl _p_20
 .word 0xf9005fa0
 .word 0xf9402fb1
 .word 0xf943a631
@@ -5757,7 +5757,7 @@ bl _p_68
 .word 0xf94057a1
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_25
+bl _p_26
 .word 0x93407c00
 .word 0xf90053a0
 .word 0xf9402fb1
@@ -8686,7 +8686,7 @@ bl _p_109
 .word 0xf9400000
 bl _p_110
 .word 0xaa1a03e1
-bl _p_40
+bl _p_30
 .word 0xaa0003f9
 .word 0xf9401bb1
 .word 0xf9413231
@@ -8697,7 +8697,7 @@ bl _p_40
 .word 0xf9400000
 bl _p_111
 .word 0xaa1a03e1
-bl _p_40
+bl _p_30
 .word 0xaa0003f8
 .word 0xf9401bb1
 .word 0xf9415e31
@@ -10547,7 +10547,7 @@ ldr x16, [x16, #1352]
 .word 0xf94017a0
 bl _p_135
 .word 0xd2800001
-bl _p_40
+bl _p_30
 .word 0xf9001fa0
 .word 0xf94017a0
 bl _p_136
@@ -10561,7 +10561,7 @@ bl _p_136
 .word 0xf94017a0
 bl _p_137
 .word 0xd2800001
-bl _p_40
+bl _p_30
 .word 0xf9001ba0
 .word 0xf94017a0
 bl _p_136
@@ -13002,7 +13002,7 @@ adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
 add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
 ldr x0, [x16, #1552]
 .word 0xd2800021
-bl _p_40
+bl _p_30
 .word 0xaa0003f6
 .word 0xaa1603e0
 .word 0xf9004ba0
@@ -13409,7 +13409,7 @@ adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
 add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
 ldr x0, [x16, #1552]
 .word 0xd2800021
-bl _p_40
+bl _p_30
 .word 0xf90057a0
 .word 0xf94057a0
 .word 0xf90083a0
@@ -13861,12 +13861,12 @@ bl IBeacon_SimpleFingerprint_AppDelegate_OnActivated_UIKit_UIApplication
 bl IBeacon_SimpleFingerprint_AppDelegate_WillTerminate_UIKit_UIApplication
 bl IBeacon_SimpleFingerprint_ViewController__ctor_intptr
 bl IBeacon_SimpleFingerprint_ViewController_ViewDidLoad
+bl IBeacon_SimpleFingerprint_ViewController_DidReceiveMemoryWarning
 bl IBeacon_SimpleFingerprint_ViewController_HandleSliderDistanceToleranceValueChanged_object_System_EventArgs
 bl IBeacon_SimpleFingerprint_ViewController_ButtonAddLocation_TouchUpInside_UIKit_UIButton
 bl IBeacon_SimpleFingerprint_ViewController_LocationManagerDidRangeBeacons_object_CoreLocation_CLRegionBeaconsRangedEventArgs
-bl IBeacon_SimpleFingerprint_ViewController_NewLocation
 bl IBeacon_SimpleFingerprint_ViewController_LocationManagerAuthorizationChanged_object_CoreLocation_CLAuthorizationChangedEventArgs
-bl IBeacon_SimpleFingerprint_ViewController_DidReceiveMemoryWarning
+bl IBeacon_SimpleFingerprint_ViewController_NewLocation
 bl IBeacon_SimpleFingerprint_ViewController_GetItemsCount_UIKit_UICollectionView_System_nint
 bl IBeacon_SimpleFingerprint_ViewController_GetCell_UIKit_UICollectionView_Foundation_NSIndexPath
 bl IBeacon_SimpleFingerprint_ViewController_get_ButtonAddLocation
@@ -14176,216 +14176,216 @@ add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
 ldr x16, [x16, #1856]
 br x16
 .word 3212
-	.no_dead_strip plt_string_Format_string_object
-plt_string_Format_string_object:
+	.no_dead_strip plt_UIKit_UIViewController_DidReceiveMemoryWarning
+plt_UIKit_UIViewController_DidReceiveMemoryWarning:
 _p_19:
 adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
 add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
 ldr x16, [x16, #1864]
 br x16
 .word 3247
-	.no_dead_strip plt_System_Collections_Generic_List_1_IBeacon_SimpleFingerprint_Location_Add_IBeacon_SimpleFingerprint_Location
-plt_System_Collections_Generic_List_1_IBeacon_SimpleFingerprint_Location_Add_IBeacon_SimpleFingerprint_Location:
+	.no_dead_strip plt_string_Format_string_object
+plt_string_Format_string_object:
 _p_20:
 adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
 add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
 ldr x16, [x16, #1872]
 br x16
 .word 3252
-	.no_dead_strip plt_System_Collections_Generic_SortedList_2_int_CoreLocation_CLBeacon__ctor
-plt_System_Collections_Generic_SortedList_2_int_CoreLocation_CLBeacon__ctor:
+	.no_dead_strip plt_System_Collections_Generic_List_1_IBeacon_SimpleFingerprint_Location_Add_IBeacon_SimpleFingerprint_Location
+plt_System_Collections_Generic_List_1_IBeacon_SimpleFingerprint_Location_Add_IBeacon_SimpleFingerprint_Location:
 _p_21:
 adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
 add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
 ldr x16, [x16, #1880]
 br x16
-.word 3263
-	.no_dead_strip plt_CoreLocation_CLRegionBeaconsRangedEventArgs_get_Beacons
-plt_CoreLocation_CLRegionBeaconsRangedEventArgs_get_Beacons:
+.word 3257
+	.no_dead_strip plt_System_Collections_Generic_SortedList_2_int_CoreLocation_CLBeacon__ctor
+plt_System_Collections_Generic_SortedList_2_int_CoreLocation_CLBeacon__ctor:
 _p_22:
 adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
 add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
 ldr x16, [x16, #1888]
 br x16
-.word 3274
-	.no_dead_strip plt_System_Linq_Enumerable_Where_CoreLocation_CLBeacon_System_Collections_Generic_IEnumerable_1_CoreLocation_CLBeacon_System_Func_2_CoreLocation_CLBeacon_bool
-plt_System_Linq_Enumerable_Where_CoreLocation_CLBeacon_System_Collections_Generic_IEnumerable_1_CoreLocation_CLBeacon_System_Func_2_CoreLocation_CLBeacon_bool:
+.word 3268
+	.no_dead_strip plt_CoreLocation_CLRegionBeaconsRangedEventArgs_get_Beacons
+plt_CoreLocation_CLRegionBeaconsRangedEventArgs_get_Beacons:
 _p_23:
 adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
 add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
 ldr x16, [x16, #1896]
 br x16
 .word 3279
-	.no_dead_strip plt_System_Collections_Generic_SortedList_2_int_CoreLocation_CLBeacon_ContainsValue_CoreLocation_CLBeacon
-plt_System_Collections_Generic_SortedList_2_int_CoreLocation_CLBeacon_ContainsValue_CoreLocation_CLBeacon:
+	.no_dead_strip plt_System_Linq_Enumerable_Where_CoreLocation_CLBeacon_System_Collections_Generic_IEnumerable_1_CoreLocation_CLBeacon_System_Func_2_CoreLocation_CLBeacon_bool
+plt_System_Linq_Enumerable_Where_CoreLocation_CLBeacon_System_Collections_Generic_IEnumerable_1_CoreLocation_CLBeacon_System_Func_2_CoreLocation_CLBeacon_bool:
 _p_24:
 adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
 add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
 ldr x16, [x16, #1904]
 br x16
-.word 3291
-	.no_dead_strip plt_System_Collections_Generic_SortedList_2_int_CoreLocation_CLBeacon_get_Count
-plt_System_Collections_Generic_SortedList_2_int_CoreLocation_CLBeacon_get_Count:
+.word 3284
+	.no_dead_strip plt_System_Collections_Generic_SortedList_2_int_CoreLocation_CLBeacon_ContainsValue_CoreLocation_CLBeacon
+plt_System_Collections_Generic_SortedList_2_int_CoreLocation_CLBeacon_ContainsValue_CoreLocation_CLBeacon:
 _p_25:
 adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
 add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
 ldr x16, [x16, #1912]
 br x16
-.word 3302
-	.no_dead_strip plt_System_Collections_Generic_SortedList_2_int_CoreLocation_CLBeacon_Add_int_CoreLocation_CLBeacon
-plt_System_Collections_Generic_SortedList_2_int_CoreLocation_CLBeacon_Add_int_CoreLocation_CLBeacon:
+.word 3296
+	.no_dead_strip plt_System_Collections_Generic_SortedList_2_int_CoreLocation_CLBeacon_get_Count
+plt_System_Collections_Generic_SortedList_2_int_CoreLocation_CLBeacon_get_Count:
 _p_26:
 adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
 add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
 ldr x16, [x16, #1920]
 br x16
-.word 3313
-	.no_dead_strip plt_IBeacon_SimpleFingerprint_ViewController_NewLocation
-plt_IBeacon_SimpleFingerprint_ViewController_NewLocation:
+.word 3307
+	.no_dead_strip plt_System_Collections_Generic_SortedList_2_int_CoreLocation_CLBeacon_Add_int_CoreLocation_CLBeacon
+plt_System_Collections_Generic_SortedList_2_int_CoreLocation_CLBeacon_Add_int_CoreLocation_CLBeacon:
 _p_27:
 adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
 add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
 ldr x16, [x16, #1928]
 br x16
-.word 3324
-	.no_dead_strip plt_string_Concat_object_object_object
-plt_string_Concat_object_object_object:
+.word 3318
+	.no_dead_strip plt_IBeacon_SimpleFingerprint_ViewController_NewLocation
+plt_IBeacon_SimpleFingerprint_ViewController_NewLocation:
 _p_28:
 adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
 add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
 ldr x16, [x16, #1936]
 br x16
 .word 3329
-	.no_dead_strip plt_IBeacon_SimpleFingerprint_Location__ctor
-plt_IBeacon_SimpleFingerprint_Location__ctor:
+	.no_dead_strip plt_string_Concat_object_object_object
+plt_string_Concat_object_object_object:
 _p_29:
 adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
 add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
 ldr x16, [x16, #1944]
 br x16
 .word 3334
-	.no_dead_strip plt_System_Collections_Generic_List_1_IBeacon_SimpleFingerprint_Location_get_Count
-plt_System_Collections_Generic_List_1_IBeacon_SimpleFingerprint_Location_get_Count:
+	.no_dead_strip plt__jit_icall_mono_array_new_specific
+plt__jit_icall_mono_array_new_specific:
 _p_30:
 adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
 add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
 ldr x16, [x16, #1952]
 br x16
 .word 3339
-	.no_dead_strip plt_int_ToString
-plt_int_ToString:
+	.no_dead_strip plt_CoreLocation_CLAuthorizationChangedEventArgs_get_Status
+plt_CoreLocation_CLAuthorizationChangedEventArgs_get_Status:
 _p_31:
 adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
 add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
 ldr x16, [x16, #1960]
 br x16
-.word 3350
-	.no_dead_strip plt_IBeacon_SimpleFingerprint_Location_AddBeacons_System_Collections_Generic_SortedList_2_int_CoreLocation_CLBeacon
-plt_IBeacon_SimpleFingerprint_Location_AddBeacons_System_Collections_Generic_SortedList_2_int_CoreLocation_CLBeacon:
+.word 3365
+	.no_dead_strip plt_System_Diagnostics_Debug_WriteLine_string_object__
+plt_System_Diagnostics_Debug_WriteLine_string_object__:
 _p_32:
 adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
 add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
 ldr x16, [x16, #1968]
 br x16
-.word 3355
-	.no_dead_strip plt_IBeacon_SimpleFingerprint_Location_GetBeaconsText
-plt_IBeacon_SimpleFingerprint_Location_GetBeaconsText:
+.word 3370
+	.no_dead_strip plt_Foundation_NSUuid__ctor_string
+plt_Foundation_NSUuid__ctor_string:
 _p_33:
 adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
 add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
 ldr x16, [x16, #1976]
 br x16
-.word 3360
-	.no_dead_strip plt_IBeacon_SimpleFingerprint_Location_InList_System_Collections_Generic_List_1_IBeacon_SimpleFingerprint_Location
-plt_IBeacon_SimpleFingerprint_Location_InList_System_Collections_Generic_List_1_IBeacon_SimpleFingerprint_Location:
+.word 3372
+	.no_dead_strip plt_CoreLocation_CLBeaconRegion__ctor_Foundation_NSUuid_string
+plt_CoreLocation_CLBeaconRegion__ctor_Foundation_NSUuid_string:
 _p_34:
 adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
 add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
 ldr x16, [x16, #1984]
 br x16
-.word 3365
-	.no_dead_strip plt_string_Concat_object_object
-plt_string_Concat_object_object:
+.word 3377
+	.no_dead_strip plt_IBeacon_SimpleFingerprint_Location__ctor
+plt_IBeacon_SimpleFingerprint_Location__ctor:
 _p_35:
 adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
 add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
 ldr x16, [x16, #1992]
 br x16
-.word 3370
-	.no_dead_strip plt_System_Diagnostics_Debug_WriteLine_string
-plt_System_Diagnostics_Debug_WriteLine_string:
+.word 3382
+	.no_dead_strip plt_System_Collections_Generic_List_1_IBeacon_SimpleFingerprint_Location_get_Count
+plt_System_Collections_Generic_List_1_IBeacon_SimpleFingerprint_Location_get_Count:
 _p_36:
 adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
 add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
 ldr x16, [x16, #2000]
 br x16
-.word 3375
-	.no_dead_strip plt_IBeacon_SimpleFingerprint_ViewController_get_LabelPositionFound
-plt_IBeacon_SimpleFingerprint_ViewController_get_LabelPositionFound:
+.word 3387
+	.no_dead_strip plt_int_ToString
+plt_int_ToString:
 _p_37:
 adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
 add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
 ldr x16, [x16, #2008]
 br x16
-.word 3377
-	.no_dead_strip plt_System_Collections_Generic_List_1_IBeacon_SimpleFingerprint_Location_get_Item_int
-plt_System_Collections_Generic_List_1_IBeacon_SimpleFingerprint_Location_get_Item_int:
+.word 3398
+	.no_dead_strip plt_IBeacon_SimpleFingerprint_Location_AddBeacons_System_Collections_Generic_SortedList_2_int_CoreLocation_CLBeacon
+plt_IBeacon_SimpleFingerprint_Location_AddBeacons_System_Collections_Generic_SortedList_2_int_CoreLocation_CLBeacon:
 _p_38:
 adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
 add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
 ldr x16, [x16, #2016]
 br x16
-.word 3382
-	.no_dead_strip plt_string_Concat_string_string
-plt_string_Concat_string_string:
+.word 3403
+	.no_dead_strip plt_IBeacon_SimpleFingerprint_Location_GetBeaconsText
+plt_IBeacon_SimpleFingerprint_Location_GetBeaconsText:
 _p_39:
 adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
 add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
 ldr x16, [x16, #2024]
 br x16
-.word 3393
-	.no_dead_strip plt__jit_icall_mono_array_new_specific
-plt__jit_icall_mono_array_new_specific:
+.word 3408
+	.no_dead_strip plt_IBeacon_SimpleFingerprint_Location_InList_System_Collections_Generic_List_1_IBeacon_SimpleFingerprint_Location
+plt_IBeacon_SimpleFingerprint_Location_InList_System_Collections_Generic_List_1_IBeacon_SimpleFingerprint_Location:
 _p_40:
 adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
 add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
 ldr x16, [x16, #2032]
 br x16
-.word 3398
-	.no_dead_strip plt_CoreLocation_CLAuthorizationChangedEventArgs_get_Status
-plt_CoreLocation_CLAuthorizationChangedEventArgs_get_Status:
+.word 3413
+	.no_dead_strip plt_string_Concat_object_object
+plt_string_Concat_object_object:
 _p_41:
 adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
 add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
 ldr x16, [x16, #2040]
 br x16
-.word 3424
-	.no_dead_strip plt_System_Diagnostics_Debug_WriteLine_string_object__
-plt_System_Diagnostics_Debug_WriteLine_string_object__:
+.word 3418
+	.no_dead_strip plt_System_Diagnostics_Debug_WriteLine_string
+plt_System_Diagnostics_Debug_WriteLine_string:
 _p_42:
 adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
 add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
 ldr x16, [x16, #2048]
 br x16
-.word 3429
-	.no_dead_strip plt_Foundation_NSUuid__ctor_string
-plt_Foundation_NSUuid__ctor_string:
+.word 3423
+	.no_dead_strip plt_IBeacon_SimpleFingerprint_ViewController_get_LabelPositionFound
+plt_IBeacon_SimpleFingerprint_ViewController_get_LabelPositionFound:
 _p_43:
 adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
 add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
 ldr x16, [x16, #2056]
 br x16
-.word 3431
-	.no_dead_strip plt_CoreLocation_CLBeaconRegion__ctor_Foundation_NSUuid_string
-plt_CoreLocation_CLBeaconRegion__ctor_Foundation_NSUuid_string:
+.word 3425
+	.no_dead_strip plt_System_Collections_Generic_List_1_IBeacon_SimpleFingerprint_Location_get_Item_int
+plt_System_Collections_Generic_List_1_IBeacon_SimpleFingerprint_Location_get_Item_int:
 _p_44:
 adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
 add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
 ldr x16, [x16, #2064]
 br x16
-.word 3436
-	.no_dead_strip plt_UIKit_UIViewController_DidReceiveMemoryWarning
-plt_UIKit_UIViewController_DidReceiveMemoryWarning:
+.word 3430
+	.no_dead_strip plt_string_Concat_string_string
+plt_string_Concat_string_string:
 _p_45:
 adrp x16, mono_aot_iBeacon_simpleFingerprint_got@PAGE+0
 add x16, x16, mono_aot_iBeacon_simpleFingerprint_got@PAGEOFF
@@ -15562,7 +15562,7 @@ runtime_version:
 .section __TEXT, __const
 	.align 2
 assembly_guid:
-	.asciz "481B2A76-22A5-48ED-838D-CF67B24D82D7"
+	.asciz "8BFC75A7-7E53-4D82-9397-3137B21A4141"
 .section __TEXT, __const
 	.align 2
 assembly_name:
@@ -17053,7 +17053,7 @@ Lfde11_end:
 	.asciz "IBeacon.SimpleFingerprint.ViewController:ViewDidLoad"
 	.asciz "IBeacon_SimpleFingerprint_ViewController_ViewDidLoad"
 
-	.byte 3,28
+	.byte 3,32
 	.quad IBeacon_SimpleFingerprint_ViewController_ViewDidLoad
 	.quad Lme_c
 
@@ -17082,70 +17082,104 @@ LDIFF_SYM217=Lme_c - IBeacon_SimpleFingerprint_ViewController_ViewDidLoad
 Lfde12_end:
 
 .section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "IBeacon.SimpleFingerprint.ViewController:DidReceiveMemoryWarning"
+	.asciz "IBeacon_SimpleFingerprint_ViewController_DidReceiveMemoryWarning"
+
+	.byte 3,55
+	.quad IBeacon_SimpleFingerprint_ViewController_DidReceiveMemoryWarning
+	.quad Lme_d
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM218=LTDIE_13_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM218
+	.byte 2,141,16,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM219=Lfde13_end - Lfde13_start
+	.long LDIFF_SYM219
+Lfde13_start:
+
+	.long 0
+	.align 3
+	.quad IBeacon_SimpleFingerprint_ViewController_DidReceiveMemoryWarning
+
+LDIFF_SYM220=Lme_d - IBeacon_SimpleFingerprint_ViewController_DidReceiveMemoryWarning
+	.long LDIFF_SYM220
+	.long 0
+	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29
+	.align 3
+Lfde13_end:
+
+.section __DWARF, __debug_info,regular,debug
 LTDIE_32:
 
 	.byte 5
 	.asciz "System_EventArgs"
 
 	.byte 16,16
-LDIFF_SYM218=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM218
+LDIFF_SYM221=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM221
 	.byte 2,35,0,0,7
 	.asciz "System_EventArgs"
 
-LDIFF_SYM219=LTDIE_32 - Ldebug_info_start
-	.long LDIFF_SYM219
+LDIFF_SYM222=LTDIE_32 - Ldebug_info_start
+	.long LDIFF_SYM222
 LTDIE_32_POINTER:
 
 	.byte 13
-LDIFF_SYM220=LTDIE_32 - Ldebug_info_start
-	.long LDIFF_SYM220
+LDIFF_SYM223=LTDIE_32 - Ldebug_info_start
+	.long LDIFF_SYM223
 LTDIE_32_REFERENCE:
 
 	.byte 14
-LDIFF_SYM221=LTDIE_32 - Ldebug_info_start
-	.long LDIFF_SYM221
+LDIFF_SYM224=LTDIE_32 - Ldebug_info_start
+	.long LDIFF_SYM224
 	.byte 2
 	.asciz "IBeacon.SimpleFingerprint.ViewController:HandleSliderDistanceToleranceValueChanged"
 	.asciz "IBeacon_SimpleFingerprint_ViewController_HandleSliderDistanceToleranceValueChanged_object_System_EventArgs"
 
-	.byte 3,51
+	.byte 3,66
 	.quad IBeacon_SimpleFingerprint_ViewController_HandleSliderDistanceToleranceValueChanged_object_System_EventArgs
-	.quad Lme_d
+	.quad Lme_e
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM222=LTDIE_13_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM222
+LDIFF_SYM225=LTDIE_13_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM225
 	.byte 1,106,3
 	.asciz "sender"
 
-LDIFF_SYM223=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM223
+LDIFF_SYM226=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM226
 	.byte 2,141,24,3
 	.asciz "e"
 
-LDIFF_SYM224=LTDIE_32_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM224
+LDIFF_SYM227=LTDIE_32_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM227
 	.byte 2,141,32,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM225=Lfde13_end - Lfde13_start
-	.long LDIFF_SYM225
-Lfde13_start:
+LDIFF_SYM228=Lfde14_end - Lfde14_start
+	.long LDIFF_SYM228
+Lfde14_start:
 
 	.long 0
 	.align 3
 	.quad IBeacon_SimpleFingerprint_ViewController_HandleSliderDistanceToleranceValueChanged_object_System_EventArgs
 
-LDIFF_SYM226=Lme_d - IBeacon_SimpleFingerprint_ViewController_HandleSliderDistanceToleranceValueChanged_object_System_EventArgs
-	.long LDIFF_SYM226
+LDIFF_SYM229=Lme_e - IBeacon_SimpleFingerprint_ViewController_HandleSliderDistanceToleranceValueChanged_object_System_EventArgs
+	.long LDIFF_SYM229
 	.long 0
 	.byte 12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,154,14
 	.align 3
-Lfde13_end:
+Lfde14_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -17153,38 +17187,38 @@ Lfde13_end:
 	.asciz "IBeacon.SimpleFingerprint.ViewController:ButtonAddLocation_TouchUpInside"
 	.asciz "IBeacon_SimpleFingerprint_ViewController_ButtonAddLocation_TouchUpInside_UIKit_UIButton"
 
-	.byte 3,57
+	.byte 3,72
 	.quad IBeacon_SimpleFingerprint_ViewController_ButtonAddLocation_TouchUpInside_UIKit_UIButton
-	.quad Lme_e
+	.quad Lme_f
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM227=LTDIE_13_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM227
+LDIFF_SYM230=LTDIE_13_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM230
 	.byte 1,106,3
 	.asciz "sender"
 
-LDIFF_SYM228=LTDIE_25_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM228
+LDIFF_SYM231=LTDIE_25_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM231
 	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM229=Lfde14_end - Lfde14_start
-	.long LDIFF_SYM229
-Lfde14_start:
+LDIFF_SYM232=Lfde15_end - Lfde15_start
+	.long LDIFF_SYM232
+Lfde15_start:
 
 	.long 0
 	.align 3
 	.quad IBeacon_SimpleFingerprint_ViewController_ButtonAddLocation_TouchUpInside_UIKit_UIButton
 
-LDIFF_SYM230=Lme_e - IBeacon_SimpleFingerprint_ViewController_ButtonAddLocation_TouchUpInside_UIKit_UIButton
-	.long LDIFF_SYM230
+LDIFF_SYM233=Lme_f - IBeacon_SimpleFingerprint_ViewController_ButtonAddLocation_TouchUpInside_UIKit_UIButton
+	.long LDIFF_SYM233
 	.long 0
 	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,154,8
 	.align 3
-Lfde14_end:
+Lfde15_end:
 
 .section __DWARF, __debug_info,regular,debug
 LTDIE_33:
@@ -17193,56 +17227,56 @@ LTDIE_33:
 	.asciz "CoreLocation_CLRegionBeaconsRangedEventArgs"
 
 	.byte 32,16
-LDIFF_SYM231=LTDIE_32 - Ldebug_info_start
-	.long LDIFF_SYM231
+LDIFF_SYM234=LTDIE_32 - Ldebug_info_start
+	.long LDIFF_SYM234
 	.byte 2,35,0,6
 	.asciz "<Beacons>k__BackingField"
 
-LDIFF_SYM232=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM232
+LDIFF_SYM235=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM235
 	.byte 2,35,16,6
 	.asciz "<Region>k__BackingField"
 
-LDIFF_SYM233=LTDIE_16_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM233
+LDIFF_SYM236=LTDIE_16_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM236
 	.byte 2,35,24,0,7
 	.asciz "CoreLocation_CLRegionBeaconsRangedEventArgs"
 
-LDIFF_SYM234=LTDIE_33 - Ldebug_info_start
-	.long LDIFF_SYM234
+LDIFF_SYM237=LTDIE_33 - Ldebug_info_start
+	.long LDIFF_SYM237
 LTDIE_33_POINTER:
 
 	.byte 13
-LDIFF_SYM235=LTDIE_33 - Ldebug_info_start
-	.long LDIFF_SYM235
+LDIFF_SYM238=LTDIE_33 - Ldebug_info_start
+	.long LDIFF_SYM238
 LTDIE_33_REFERENCE:
 
 	.byte 14
-LDIFF_SYM236=LTDIE_33 - Ldebug_info_start
-	.long LDIFF_SYM236
+LDIFF_SYM239=LTDIE_33 - Ldebug_info_start
+	.long LDIFF_SYM239
 LTDIE_34:
 
 	.byte 5
 	.asciz "CoreLocation_CLBeacon"
 
 	.byte 40,16
-LDIFF_SYM237=LTDIE_4 - Ldebug_info_start
-	.long LDIFF_SYM237
+LDIFF_SYM240=LTDIE_4 - Ldebug_info_start
+	.long LDIFF_SYM240
 	.byte 2,35,0,0,7
 	.asciz "CoreLocation_CLBeacon"
 
-LDIFF_SYM238=LTDIE_34 - Ldebug_info_start
-	.long LDIFF_SYM238
+LDIFF_SYM241=LTDIE_34 - Ldebug_info_start
+	.long LDIFF_SYM241
 LTDIE_34_POINTER:
 
 	.byte 13
-LDIFF_SYM239=LTDIE_34 - Ldebug_info_start
-	.long LDIFF_SYM239
+LDIFF_SYM242=LTDIE_34 - Ldebug_info_start
+	.long LDIFF_SYM242
 LTDIE_34_REFERENCE:
 
 	.byte 14
-LDIFF_SYM240=LTDIE_34 - Ldebug_info_start
-	.long LDIFF_SYM240
+LDIFF_SYM243=LTDIE_34 - Ldebug_info_start
+	.long LDIFF_SYM243
 LTDIE_35:
 
 	.byte 17
@@ -17251,106 +17285,67 @@ LTDIE_35:
 	.byte 16,7
 	.asciz "System_Collections_Generic_IEnumerator`1"
 
-LDIFF_SYM241=LTDIE_35 - Ldebug_info_start
-	.long LDIFF_SYM241
+LDIFF_SYM244=LTDIE_35 - Ldebug_info_start
+	.long LDIFF_SYM244
 LTDIE_35_POINTER:
 
 	.byte 13
-LDIFF_SYM242=LTDIE_35 - Ldebug_info_start
-	.long LDIFF_SYM242
+LDIFF_SYM245=LTDIE_35 - Ldebug_info_start
+	.long LDIFF_SYM245
 LTDIE_35_REFERENCE:
 
 	.byte 14
-LDIFF_SYM243=LTDIE_35 - Ldebug_info_start
-	.long LDIFF_SYM243
+LDIFF_SYM246=LTDIE_35 - Ldebug_info_start
+	.long LDIFF_SYM246
 	.byte 2
 	.asciz "IBeacon.SimpleFingerprint.ViewController:LocationManagerDidRangeBeacons"
 	.asciz "IBeacon_SimpleFingerprint_ViewController_LocationManagerDidRangeBeacons_object_CoreLocation_CLRegionBeaconsRangedEventArgs"
 
-	.byte 3,72
+	.byte 3,93
 	.quad IBeacon_SimpleFingerprint_ViewController_LocationManagerDidRangeBeacons_object_CoreLocation_CLRegionBeaconsRangedEventArgs
-	.quad Lme_f
-
-	.byte 2,118,16,3
-	.asciz "this"
-
-LDIFF_SYM244=LTDIE_13_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM244
-	.byte 1,105,3
-	.asciz "sender"
-
-LDIFF_SYM245=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM245
-	.byte 2,141,40,3
-	.asciz "e"
-
-LDIFF_SYM246=LTDIE_33_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM246
-	.byte 2,141,48,11
-	.asciz "beacon"
-
-LDIFF_SYM247=LTDIE_34_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM247
-	.byte 1,104,11
-	.asciz "V_1"
-
-LDIFF_SYM248=LTDIE_35_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM248
-	.byte 3,141,208,0,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM249=Lfde15_end - Lfde15_start
-	.long LDIFF_SYM249
-Lfde15_start:
-
-	.long 0
-	.align 3
-	.quad IBeacon_SimpleFingerprint_ViewController_LocationManagerDidRangeBeacons_object_CoreLocation_CLRegionBeaconsRangedEventArgs
-
-LDIFF_SYM250=Lme_f - IBeacon_SimpleFingerprint_ViewController_LocationManagerDidRangeBeacons_object_CoreLocation_CLRegionBeaconsRangedEventArgs
-	.long LDIFF_SYM250
-	.long 0
-	.byte 12,31,0,68,14,160,1,157,20,158,19,68,13,29,68,151,18,152,17,68,153,16
-	.align 3
-Lfde15_end:
-
-.section __DWARF, __debug_info,regular,debug
-
-	.byte 2
-	.asciz "IBeacon.SimpleFingerprint.ViewController:NewLocation"
-	.asciz "IBeacon_SimpleFingerprint_ViewController_NewLocation"
-
-	.byte 3,90
-	.quad IBeacon_SimpleFingerprint_ViewController_NewLocation
 	.quad Lme_10
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM251=LTDIE_13_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM251
-	.byte 1,106,11
-	.asciz "V_0"
+LDIFF_SYM247=LTDIE_13_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM247
+	.byte 1,105,3
+	.asciz "sender"
 
-LDIFF_SYM252=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM252
-	.byte 2,141,48,0
+LDIFF_SYM248=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM248
+	.byte 2,141,40,3
+	.asciz "e"
+
+LDIFF_SYM249=LTDIE_33_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM249
+	.byte 2,141,48,11
+	.asciz "beacon"
+
+LDIFF_SYM250=LTDIE_34_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM250
+	.byte 1,104,11
+	.asciz "V_1"
+
+LDIFF_SYM251=LTDIE_35_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM251
+	.byte 3,141,208,0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM253=Lfde16_end - Lfde16_start
-	.long LDIFF_SYM253
+LDIFF_SYM252=Lfde16_end - Lfde16_start
+	.long LDIFF_SYM252
 Lfde16_start:
 
 	.long 0
 	.align 3
-	.quad IBeacon_SimpleFingerprint_ViewController_NewLocation
+	.quad IBeacon_SimpleFingerprint_ViewController_LocationManagerDidRangeBeacons_object_CoreLocation_CLRegionBeaconsRangedEventArgs
 
-LDIFF_SYM254=Lme_10 - IBeacon_SimpleFingerprint_ViewController_NewLocation
-	.long LDIFF_SYM254
+LDIFF_SYM253=Lme_10 - IBeacon_SimpleFingerprint_ViewController_LocationManagerDidRangeBeacons_object_CoreLocation_CLRegionBeaconsRangedEventArgs
+	.long LDIFF_SYM253
 	.long 0
-	.byte 12,31,0,68,14,224,1,157,28,158,27,68,13,29,68,154,26
+	.byte 12,31,0,68,14,160,1,157,20,158,19,68,13,29,68,151,18,152,17,68,153,16
 	.align 3
 Lfde16_end:
 
@@ -17361,8 +17356,8 @@ LTDIE_37:
 	.asciz "CoreLocation_CLAuthorizationStatus"
 
 	.byte 4
-LDIFF_SYM255=LDIE_U4 - Ldebug_info_start
-	.long LDIFF_SYM255
+LDIFF_SYM254=LDIE_U4 - Ldebug_info_start
+	.long LDIFF_SYM254
 	.byte 9
 	.asciz "NotDetermined"
 
@@ -17384,46 +17379,46 @@ LDIFF_SYM255=LDIE_U4 - Ldebug_info_start
 	.byte 4,0,7
 	.asciz "CoreLocation_CLAuthorizationStatus"
 
-LDIFF_SYM256=LTDIE_37 - Ldebug_info_start
-	.long LDIFF_SYM256
+LDIFF_SYM255=LTDIE_37 - Ldebug_info_start
+	.long LDIFF_SYM255
 LTDIE_37_POINTER:
 
 	.byte 13
-LDIFF_SYM257=LTDIE_37 - Ldebug_info_start
-	.long LDIFF_SYM257
+LDIFF_SYM256=LTDIE_37 - Ldebug_info_start
+	.long LDIFF_SYM256
 LTDIE_37_REFERENCE:
 
 	.byte 14
-LDIFF_SYM258=LTDIE_37 - Ldebug_info_start
-	.long LDIFF_SYM258
+LDIFF_SYM257=LTDIE_37 - Ldebug_info_start
+	.long LDIFF_SYM257
 LTDIE_36:
 
 	.byte 5
 	.asciz "CoreLocation_CLAuthorizationChangedEventArgs"
 
 	.byte 20,16
-LDIFF_SYM259=LTDIE_32 - Ldebug_info_start
-	.long LDIFF_SYM259
+LDIFF_SYM258=LTDIE_32 - Ldebug_info_start
+	.long LDIFF_SYM258
 	.byte 2,35,0,6
 	.asciz "<Status>k__BackingField"
 
-LDIFF_SYM260=LTDIE_37 - Ldebug_info_start
-	.long LDIFF_SYM260
+LDIFF_SYM259=LTDIE_37 - Ldebug_info_start
+	.long LDIFF_SYM259
 	.byte 2,35,16,0,7
 	.asciz "CoreLocation_CLAuthorizationChangedEventArgs"
 
-LDIFF_SYM261=LTDIE_36 - Ldebug_info_start
-	.long LDIFF_SYM261
+LDIFF_SYM260=LTDIE_36 - Ldebug_info_start
+	.long LDIFF_SYM260
 LTDIE_36_POINTER:
 
 	.byte 13
-LDIFF_SYM262=LTDIE_36 - Ldebug_info_start
-	.long LDIFF_SYM262
+LDIFF_SYM261=LTDIE_36 - Ldebug_info_start
+	.long LDIFF_SYM261
 LTDIE_36_REFERENCE:
 
 	.byte 14
-LDIFF_SYM263=LTDIE_36 - Ldebug_info_start
-	.long LDIFF_SYM263
+LDIFF_SYM262=LTDIE_36 - Ldebug_info_start
+	.long LDIFF_SYM262
 	.byte 2
 	.asciz "IBeacon.SimpleFingerprint.ViewController:LocationManagerAuthorizationChanged"
 	.asciz "IBeacon_SimpleFingerprint_ViewController_LocationManagerAuthorizationChanged_object_CoreLocation_CLAuthorizationChangedEventArgs"
@@ -17435,32 +17430,32 @@ LDIFF_SYM263=LTDIE_36 - Ldebug_info_start
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM264=LTDIE_13_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM264
+LDIFF_SYM263=LTDIE_13_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM263
 	.byte 1,105,3
 	.asciz "sender"
 
-LDIFF_SYM265=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM265
+LDIFF_SYM264=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM264
 	.byte 2,141,40,3
 	.asciz "e"
 
-LDIFF_SYM266=LTDIE_36_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM266
+LDIFF_SYM265=LTDIE_36_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM265
 	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM267=Lfde17_end - Lfde17_start
-	.long LDIFF_SYM267
+LDIFF_SYM266=Lfde17_end - Lfde17_start
+	.long LDIFF_SYM266
 Lfde17_start:
 
 	.long 0
 	.align 3
 	.quad IBeacon_SimpleFingerprint_ViewController_LocationManagerAuthorizationChanged_object_CoreLocation_CLAuthorizationChangedEventArgs
 
-LDIFF_SYM268=Lme_11 - IBeacon_SimpleFingerprint_ViewController_LocationManagerAuthorizationChanged_object_CoreLocation_CLAuthorizationChangedEventArgs
-	.long LDIFF_SYM268
+LDIFF_SYM267=Lme_11 - IBeacon_SimpleFingerprint_ViewController_LocationManagerAuthorizationChanged_object_CoreLocation_CLAuthorizationChangedEventArgs
+	.long LDIFF_SYM267
 	.long 0
 	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,68,152,16,153,15,68,154,14
 	.align 3
@@ -17469,19 +17464,24 @@ Lfde17_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "IBeacon.SimpleFingerprint.ViewController:DidReceiveMemoryWarning"
-	.asciz "IBeacon_SimpleFingerprint_ViewController_DidReceiveMemoryWarning"
+	.asciz "IBeacon.SimpleFingerprint.ViewController:NewLocation"
+	.asciz "IBeacon_SimpleFingerprint_ViewController_NewLocation"
 
-	.byte 3,128,1
-	.quad IBeacon_SimpleFingerprint_ViewController_DidReceiveMemoryWarning
+	.byte 3,133,1
+	.quad IBeacon_SimpleFingerprint_ViewController_NewLocation
 	.quad Lme_12
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM269=LTDIE_13_REFERENCE - Ldebug_info_start
+LDIFF_SYM268=LTDIE_13_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM268
+	.byte 1,106,11
+	.asciz "V_0"
+
+LDIFF_SYM269=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM269
-	.byte 2,141,16,0
+	.byte 2,141,48,0
 
 .section __DWARF, __debug_frame,regular,debug
 
@@ -17491,12 +17491,12 @@ Lfde18_start:
 
 	.long 0
 	.align 3
-	.quad IBeacon_SimpleFingerprint_ViewController_DidReceiveMemoryWarning
+	.quad IBeacon_SimpleFingerprint_ViewController_NewLocation
 
-LDIFF_SYM271=Lme_12 - IBeacon_SimpleFingerprint_ViewController_DidReceiveMemoryWarning
+LDIFF_SYM271=Lme_12 - IBeacon_SimpleFingerprint_ViewController_NewLocation
 	.long LDIFF_SYM271
 	.long 0
-	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29
+	.byte 12,31,0,68,14,224,1,157,28,158,27,68,13,29,68,154,26
 	.align 3
 Lfde18_end:
 
@@ -17506,7 +17506,7 @@ Lfde18_end:
 	.asciz "IBeacon.SimpleFingerprint.ViewController:GetItemsCount"
 	.asciz "IBeacon_SimpleFingerprint_ViewController_GetItemsCount_UIKit_UICollectionView_System_nint"
 
-	.byte 3,134,1
+	.byte 3,154,1
 	.quad IBeacon_SimpleFingerprint_ViewController_GetItemsCount_UIKit_UICollectionView_System_nint
 	.quad Lme_13
 
@@ -17651,7 +17651,7 @@ LDIFF_SYM294=LTDIE_39 - Ldebug_info_start
 	.asciz "IBeacon.SimpleFingerprint.ViewController:GetCell"
 	.asciz "IBeacon_SimpleFingerprint_ViewController_GetCell_UIKit_UICollectionView_Foundation_NSIndexPath"
 
-	.byte 3,139,1
+	.byte 3,159,1
 	.quad IBeacon_SimpleFingerprint_ViewController_GetCell_UIKit_UICollectionView_Foundation_NSIndexPath
 	.quad Lme_14
 
@@ -18212,7 +18212,7 @@ Lfde33_end:
 	.asciz "IBeacon.SimpleFingerprint.ViewController:<LocationManagerDidRangeBeacons>m__0"
 	.asciz "IBeacon_SimpleFingerprint_ViewController__LocationManagerDidRangeBeaconsm__0_CoreLocation_CLBeacon"
 
-	.byte 3,75
+	.byte 3,96
 	.quad IBeacon_SimpleFingerprint_ViewController__LocationManagerDidRangeBeaconsm__0_CoreLocation_CLBeacon
 	.quad Lme_22
 
@@ -22675,38 +22675,36 @@ Ldebug_line_header_end:
 	.byte 0,9,2
 	.quad IBeacon_SimpleFingerprint_ViewController_ViewDidLoad
 
-	.byte 4,3,1,10,3,27,2,56,1,8,229,3,3,2,44,1,3,1,2,228,0,1,3,2,2,228,0,1,3,1,2,236
+	.byte 4,3,1,10,3,31,2,56,1,8,229,3,3,2,44,1,3,1,2,228,0,1,3,2,2,228,0,1,3,1,2,236
 	.byte 0,1,3,2,2,248,0,1,3,1,2,248,0,1,3,2,2,156,1,1,3,2,2,188,1,1,3,2,2,188,1,1
 	.byte 3,1,2,192,0,1,3,2,2,224,1,1,2,200,0,1,0,1,1
 .section __DWARF, __debug_line,regular,debug
 
 	.byte 0,9,2
+	.quad IBeacon_SimpleFingerprint_ViewController_DidReceiveMemoryWarning
+
+	.byte 4,3,1,10,3,54,2,52,1,8,229,3,2,2,48,1,2,44,1,0,1,1
+.section __DWARF, __debug_line,regular,debug
+
+	.byte 0,9,2
 	.quad IBeacon_SimpleFingerprint_ViewController_HandleSliderDistanceToleranceValueChanged_object_System_EventArgs
 
-	.byte 4,3,1,10,3,50,2,192,0,1,8,229,3,1,2,248,0,1,3,1,2,192,1,1,2,48,1,0,1,1
+	.byte 4,3,1,10,3,193,0,2,192,0,1,8,229,3,1,2,248,0,1,3,1,2,192,1,1,2,48,1,0,1,1
 .section __DWARF, __debug_line,regular,debug
 
 	.byte 0,9,2
 	.quad IBeacon_SimpleFingerprint_ViewController_ButtonAddLocation_TouchUpInside_UIKit_UIButton
 
-	.byte 4,3,1,10,3,56,2,60,1,8,229,3,1,2,48,1,243,3,1,2,204,0,1,243,3,1,2,228,0,1,2,48
-	.byte 1,0,1,1
+	.byte 4,3,1,10,3,199,0,2,60,1,8,229,3,1,2,48,1,243,3,1,2,204,0,1,243,3,1,2,228,0,1,2
+	.byte 48,1,0,1,1
 .section __DWARF, __debug_line,regular,debug
 
 	.byte 0,9,2
 	.quad IBeacon_SimpleFingerprint_ViewController_LocationManagerDidRangeBeacons_object_CoreLocation_CLRegionBeaconsRangedEventArgs
 
-	.byte 4,3,1,10,3,199,0,2,204,0,1,8,229,3,2,2,228,0,1,3,1,2,132,4,1,243,3,1,2,232,0,1
+	.byte 4,3,1,10,3,220,0,2,204,0,1,8,229,3,2,2,228,0,1,3,1,2,132,4,1,243,3,1,2,232,0,1
 	.byte 8,229,3,1,2,140,1,1,243,3,122,2,40,1,3,8,2,196,1,1,3,1,2,248,0,1,3,2,2,208,0,1
 	.byte 3,1,2,128,2,1,2,196,0,1,0,1,1
-.section __DWARF, __debug_line,regular,debug
-
-	.byte 0,9,2
-	.quad IBeacon_SimpleFingerprint_ViewController_NewLocation
-
-	.byte 4,3,1,10,3,217,0,2,60,1,8,229,3,1,2,228,0,1,3,1,2,188,1,1,3,1,2,236,0,1,3,1
-	.byte 2,40,1,3,2,2,204,0,1,3,2,2,152,1,1,3,1,2,240,0,1,3,1,2,48,1,243,3,1,2,236,0
-	.byte 1,3,1,2,220,1,1,8,62,3,2,2,248,0,1,2,192,0,1,0,1,1
 .section __DWARF, __debug_line,regular,debug
 
 	.byte 0,9,2
@@ -22717,21 +22715,23 @@ Ldebug_line_header_end:
 .section __DWARF, __debug_line,regular,debug
 
 	.byte 0,9,2
-	.quad IBeacon_SimpleFingerprint_ViewController_DidReceiveMemoryWarning
+	.quad IBeacon_SimpleFingerprint_ViewController_NewLocation
 
-	.byte 4,3,1,10,3,255,0,2,52,1,8,229,3,2,2,48,1,2,44,1,0,1,1
+	.byte 4,3,1,10,3,132,1,2,60,1,8,229,3,1,2,228,0,1,3,1,2,188,1,1,3,1,2,236,0,1,3,1
+	.byte 2,40,1,3,2,2,204,0,1,3,2,2,152,1,1,3,1,2,240,0,1,3,1,2,48,1,243,3,1,2,236,0
+	.byte 1,3,1,2,220,1,1,8,62,3,2,2,248,0,1,2,192,0,1,0,1,1
 .section __DWARF, __debug_line,regular,debug
 
 	.byte 0,9,2
 	.quad IBeacon_SimpleFingerprint_ViewController_GetItemsCount_UIKit_UICollectionView_System_nint
 
-	.byte 4,3,1,10,3,133,1,2,196,0,1,8,229,3,1,2,128,1,1,2,56,1,0,1,1
+	.byte 4,3,1,10,3,153,1,2,196,0,1,8,229,3,1,2,128,1,1,2,56,1,0,1,1
 .section __DWARF, __debug_line,regular,debug
 
 	.byte 0,9,2
 	.quad IBeacon_SimpleFingerprint_ViewController_GetCell_UIKit_UICollectionView_Foundation_NSIndexPath
 
-	.byte 4,3,1,10,3,138,1,2,216,0,1,8,229,3,2,2,172,1,1,3,1,2,132,1,1,3,1,2,136,1,1,3
+	.byte 4,3,1,10,3,158,1,2,216,0,1,8,229,3,2,2,172,1,1,3,1,2,132,1,1,3,1,2,136,1,1,3
 	.byte 2,2,132,2,1,8,117,2,208,0,1,0,1,1
 .section __DWARF, __debug_line,regular,debug
 
@@ -22819,7 +22819,7 @@ Ldebug_line_header_end:
 	.byte 0,9,2
 	.quad IBeacon_SimpleFingerprint_ViewController__LocationManagerDidRangeBeaconsm__0_CoreLocation_CLBeacon
 
-	.byte 4,3,1,10,3,202,0,2,60,1,2,228,1,1,0,1,1
+	.byte 4,3,1,10,3,223,0,2,60,1,2,228,1,1,0,1,1
 .section __DWARF, __debug_line,regular,debug
 
 	.byte 0,9,2

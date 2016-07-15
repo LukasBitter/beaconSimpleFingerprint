@@ -24,6 +24,10 @@ namespace IBeacon.SimpleFingerprint
 			
 		}
 
+		/***********************************
+		 ***           Overrides
+		 ***********************************/
+
 		public override void ViewDidLoad ()
 		{
 			base.ViewDidLoad ();
@@ -47,6 +51,17 @@ namespace IBeacon.SimpleFingerprint
 
 		}
 
+		public override void DidReceiveMemoryWarning()
+		{
+			base.DidReceiveMemoryWarning();
+			// Release any cached data, images, etc that aren't in use.
+		}
+
+
+		/***********************************
+		 ***        UI Elements
+		 ***********************************/
+
 		void HandleSliderDistanceToleranceValueChanged(object sender, EventArgs e)
 		{
 			distanceTolerance = SliderDistanceTolerance.Value;
@@ -61,6 +76,12 @@ namespace IBeacon.SimpleFingerprint
 			}
 			LocationCollection.ReloadData();
 		}
+
+
+		/***********************************
+		 *** Delegate CoreLocation
+		 *** location manager functions
+		 ***********************************/
 
 		/// <summary>
 		/// Triggered when the locationsManager did range beacons.
@@ -86,6 +107,28 @@ namespace IBeacon.SimpleFingerprint
 				CurrentLocationText.Text = "Only " + listRangedBeacons.Count + " beacons in range \n Not enough to set position"; 
 		}
 
+		/// <summary>
+		/// Triggered when the locationsManager authorization changed.
+		/// </summary>
+		/// <returns>The manager authorization changed.</returns>
+		/// <param name="sender">Sender.</param>
+		/// <param name="e">E.</param>
+		void LocationManagerAuthorizationChanged(object sender, CLAuthorizationChangedEventArgs e)
+		{
+			Debug.WriteLine ("Status: {0}", e.Status);
+
+			if(e.Status == CLAuthorizationStatus.AuthorizedAlways)
+			{
+				region = new CLBeaconRegion(new NSUuid("F7826DA6-4fA2-4E98-8024-BC5B71E0893E"), "My region"); // Kontakt iBeacon
+				locationManager.StartRangingBeacons(region);
+			}
+		}
+
+
+		/***********************************
+		 *** Location management
+		 ***********************************/
+
 		void NewLocation()
 		{
 			currentLocation = new Location();
@@ -105,29 +148,6 @@ namespace IBeacon.SimpleFingerprint
 			else
 				LabelPositionFound.Text = "Position: None found";
 
-		}
-
-		/// <summary>
-		/// Triggered when the locationsManager authorization changed.
-		/// </summary>
-		/// <returns>The manager authorization changed.</returns>
-		/// <param name="sender">Sender.</param>
-		/// <param name="e">E.</param>
-		void LocationManagerAuthorizationChanged(object sender, CLAuthorizationChangedEventArgs e)
-		{
-			Debug.WriteLine ("Status: {0}", e.Status);
-
-			if(e.Status == CLAuthorizationStatus.AuthorizedAlways)
-			{
-				region = new CLBeaconRegion(new NSUuid("F7826DA6-4fA2-4E98-8024-BC5B71E0893E"), "My region"); // Kontakt iBeacon
-				locationManager.StartRangingBeacons(region);
-			}
-		}
-
-		public override void DidReceiveMemoryWarning ()
-		{
-			base.DidReceiveMemoryWarning ();
-			// Release any cached data, images, etc that aren't in use.
 		}
 
 		public nint GetItemsCount(UICollectionView collectionView, nint section)

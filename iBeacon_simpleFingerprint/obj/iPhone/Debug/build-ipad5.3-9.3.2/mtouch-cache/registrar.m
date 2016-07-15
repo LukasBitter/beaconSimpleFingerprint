@@ -1563,8 +1563,8 @@ static void native_to_managed_trampoline_33 (id self, SEL _cmd, MonoMethod **man
 	-(UISlider *) SliderDistanceTolerance;
 	-(void) setSliderDistanceTolerance:(UISlider *)p0;
 	-(void) viewDidLoad;
-	-(void) ButtonAddLocation_TouchUpInside:(UIButton *)p0;
 	-(void) didReceiveMemoryWarning;
+	-(void) ButtonAddLocation_TouchUpInside:(UIButton *)p0;
 	-(NSInteger) collectionView:(UICollectionView *)p0 numberOfItemsInSection:(NSInteger)p1;
 	-(UICollectionViewCell *) collectionView:(UICollectionView *)p0 cellForItemAtIndexPath:(NSIndexPath *)p1;
 	-(BOOL) conformsToProtocol:(void *)p0;
@@ -1670,16 +1670,16 @@ static void native_to_managed_trampoline_33 (id self, SEL _cmd, MonoMethod **man
 		native_to_managed_trampoline_1 (self, _cmd, &managed_method, "IBeacon.SimpleFingerprint.ViewController, iBeacon_simpleFingerprint", "ViewDidLoad");
 	}
 
-	-(void) ButtonAddLocation_TouchUpInside:(UIButton *)p0
-	{
-		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_9 (self, _cmd, &managed_method, p0, "UIKit.UIButton, Xamarin.iOS", "IBeacon.SimpleFingerprint.ViewController, iBeacon_simpleFingerprint", "ButtonAddLocation_TouchUpInside");
-	}
-
 	-(void) didReceiveMemoryWarning
 	{
 		static MonoMethod *managed_method = NULL;
 		native_to_managed_trampoline_1 (self, _cmd, &managed_method, "IBeacon.SimpleFingerprint.ViewController, iBeacon_simpleFingerprint", "DidReceiveMemoryWarning");
+	}
+
+	-(void) ButtonAddLocation_TouchUpInside:(UIButton *)p0
+	{
+		static MonoMethod *managed_method = NULL;
+		native_to_managed_trampoline_9 (self, _cmd, &managed_method, p0, "UIKit.UIButton, Xamarin.iOS", "IBeacon.SimpleFingerprint.ViewController, iBeacon_simpleFingerprint", "ButtonAddLocation_TouchUpInside");
 	}
 
 	-(NSInteger) collectionView:(UICollectionView *)p0 numberOfItemsInSection:(NSInteger)p1
