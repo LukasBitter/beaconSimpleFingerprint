@@ -18,7 +18,10 @@ namespace IBeacon.SimpleFingerprint
 		int indexLocationList;
 		float distanceTolerance;
 
-
+		/// <summary>
+		/// Look at the readme file
+		/// </summary>
+		/// <param name="handle">Handle.</param>
 		public ViewController (IntPtr handle) : base (handle)
 		{
 			
@@ -61,13 +64,23 @@ namespace IBeacon.SimpleFingerprint
 		/***********************************
 		 ***        UI Elements
 		 ***********************************/
-
+		/// <summary>
+		/// Handles when the slider distance tolerance value changed.
+		/// </summary>
+		/// <returns>The slider distance tolerance value changed.</returns>
+		/// <param name="sender">Sender.</param>
+		/// <param name="e">E.</param>
 		void HandleSliderDistanceToleranceValueChanged(object sender, EventArgs e)
 		{
 			distanceTolerance = SliderDistanceTolerance.Value;
 			LabelDistanceToleranceValue.Text = string.Format("{0:0.0}", distanceTolerance);
 		}
 
+		/// <summary>
+		/// Manages touch action on the button
+		/// </summary>
+		/// <returns>The add location touch up inside.</returns>
+		/// <param name="sender">Sender.</param>
 		partial void ButtonAddLocation_TouchUpInside(UIButton sender)
 		{
 			if (indexLocationList == -1)
@@ -129,6 +142,10 @@ namespace IBeacon.SimpleFingerprint
 		 *** Location management
 		 ***********************************/
 
+		/// <summary>
+		/// Creates a new location
+		/// </summary>
+		/// <returns>The location.</returns>
 		void NewLocation()
 		{
 			currentLocation = new Location();
@@ -150,11 +167,23 @@ namespace IBeacon.SimpleFingerprint
 
 		}
 
+		/// <summary>
+		/// Counts the items in a collection
+		/// </summary>
+		/// <returns>The items count.</returns>
+		/// <param name="collectionView">Collection view.</param>
+		/// <param name="section">Section.</param>
 		public nint GetItemsCount(UICollectionView collectionView, nint section)
 		{
 			return listLocations.Count(); 
 		}
 
+		/// <summary>
+		/// Returns the cell of a collection view, for UI purposes
+		/// </summary>
+		/// <returns>The cell.</returns>
+		/// <param name="collectionView">Collection view.</param>
+		/// <param name="indexPath">Index path.</param>
 		public UICollectionViewCell GetCell(UICollectionView collectionView, NSIndexPath indexPath)
 		{
 			var cell = (ResultLocationCell)collectionView.DequeueReusableCell("location", indexPath);
